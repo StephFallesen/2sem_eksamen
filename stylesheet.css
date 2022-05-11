@@ -1,3 +1,351 @@
-.hejsa {
-velkommen til klovne
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Root farver */
+:root {
+  --lyspink: #FBF3EE;
+  --mediumpink: #FCE3D8;
+  --mørkpink: #F1D7CB;
+  --pink: #EC9690;
+  --gulhvid: #FCFAF2;
+  --egg: #F7F3F1;
+  --lyslilla: #DBCAE4;
+  --mediumlilla: #634D68;
+  --mørklilla: #35254C;
+  --lysgrøn: #E2F0EB;
+  --mørkgrøn: #CDE5D8;
+}
+
+/* :root {
+  --primary: #36244d;
+  --secondary: #dcbcfd;
+  --secondary-rgb: 220,188,253;
+  --light-red: #fcf4f0;
+  --light-green: #e0f9f0;
+  --light-yellow: #fcfaf0;
+  --dark-red: #f2d7ca;
+  --dark-green: #cbebdb;
+} */
+
+html {
+  font-family: 'Darker Grotesque', 'Poppins', sans-serif;
+}
+p {
+  font-size: 18px;
+}
+
+
+
+/* Styleguide */
+#sgh1 {
+  font-size: 60px;
+}
+#typografi {
+  margin-top: 50px;
+}
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--lysgrøn);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Page content */
+.main {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 25px 8px 8px 40px;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--hvid);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: var(--rød);
+}
+
+.styleguideMain {
+  margin-left: 300px;
+  margin-bottom: 70px;
+}
+
+.styleguideMain h2 {
+  text-align: left;
+}
+
+.styleguideMain h3 {
+  text-align: left;
+}
+
+#stephBaggrund {
+  background: #f2f2f2;
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#farver {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.farve1 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--lyspink);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.farve2 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--mediumpink);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.farve3 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--mørkpink);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.farve4 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--pink);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.farve5 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--gulhvid);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.farve6 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--egg);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.farve7 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--lyslilla);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.farve8 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--mediumlilla);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve9 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--mørklilla);
+  color: #FFFFFF;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve10 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--lysgrøn);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve11 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--mørkgrøn);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.styleguideMain #stephCTA {
+  margin: 0;
+}
+
+.styleguideMain textarea {
+  width: 45%;
+  height: 100px;
+}
+
+.styleguideMain .newsletter-box {
+  padding: 20px;
+  width: 70%;
+  margin: 0;
+}
+
+.styleguideMain .stephLanding h2 {
+  text-align: center;
+}
+
+/* On smaller screens, where height is less than 450px,
+change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.boxgrøn {
+  padding: 20px 30px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: var(--lysgrøn);
+  border-radius: 40px;
+  height: 304px;
+  width: 288px;
+}
+.boxlilla {
+  padding: 20px 30px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: var(--lyslilla);
+  border-radius: 40px;
+  height: 304px;
+  width: 288px;
+}
+.boxpink {
+  padding: 20px 30px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: var(--mediumpink);
+  border-radius: 40px;
+  height: 304px;
+  width: 288px;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.spaces-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0 56px;
+  width: 60%;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  padding: 16px 40px;
+  background: #dcbcfd;
+  border-radius: 100px;
+  font-size: 16px;
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+#scriptoNav {
+  
 }
