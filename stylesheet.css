@@ -2,36 +2,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
 
 /* Root farver */
+
 :root {
-  --lyspink: #FBF3EE;
-  --mediumpink: #FCE3D8;
-  --mørkpink: #F1D7CB;
-  --pink: #EC9690;
-  --gulhvid: #FCFAF2;
-  --egg: #F7F3F1;
-  --lyslilla: #DBCAE4;
-  --mediumlilla: #634D68;
-  --mørklilla: #35254C;
-  --lysgrøn: #E2F0EB;
-  --mørkgrøn: #CDE5D8;
+  --mørklilla: #36244d;
+  --lyslilla: #dcbcfd;
+  --lyslilla-rgb: 220,188,253;
+  --egg #fcf4f0;
+  --lysgrøn: #e0f9f0;
+  --gulhvid: #fcfaf0;
+  --pink: #f2d7ca;
+  --mørkpink: #f29e99;
+  --mørkgrøn: #cbebdb;
 }
 
-/* :root {
-  --primary: #36244d;
-  --secondary: #dcbcfd;
-  --secondary-rgb: 220,188,253;
-  --light-red: #fcf4f0;
-  --light-green: #e0f9f0;
-  --light-yellow: #fcfaf0;
-  --dark-red: #f2d7ca;
-  --dark-green: #cbebdb;
-} */
+/* General CSS */
 
-html {
-  font-family: 'Darker Grotesque', 'Poppins', sans-serif;
+html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
+body { margin-left: 20%; margin-top: 5%;}
+p { font-size: 14px; }
+h1 { font-size: 40px; }
+h2 { font-size: 20px; }
+
+/* Nav */
+#subscriptoNav {
+display: flex;
+flex-grow: 1;
+flex-direction: column;
+justify-content: center;
+background-color: var(--gulhvid);
+width: 100px;
+height: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+overflow-x: hidden;
+align-items: center;
 }
-p {
-  font-size: 18px;
+
+.navicon {
+  position: relative;
+  display: inline-block;
+  padding-top: 50px;
+}
+.navicon img {
+  max-height: 25px;
 }
 
 
@@ -106,7 +121,7 @@ p {
 .farve1 {
   text-align: center;
   padding: 15px;
-  background-color: var(--lyspink);
+  background-color: var(--mørkpink);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
@@ -119,7 +134,7 @@ p {
 .farve2 {
   text-align: center;
   padding: 15px;
-  background-color: var(--mediumpink);
+  background-color: var(--pink);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
@@ -132,7 +147,7 @@ p {
 .farve3 {
   text-align: center;
   padding: 15px;
-  background-color: var(--mørkpink);
+  background-color: var(--gulhvid);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
@@ -145,7 +160,7 @@ p {
 .farve4 {
   text-align: center;
   padding: 15px;
-  background-color: var(--pink);
+  background-color: var(--lyslilla);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
@@ -158,57 +173,6 @@ p {
 .farve5 {
   text-align: center;
   padding: 15px;
-  background-color: var(--gulhvid);
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-right: 100px;
-  width: 300px;
-  height: 150px;
-  box-shadow: 7px 7px 7px #f2f2f2;
-  border: 1px solid #f2f2f2;
-}
-
-.farve6 {
-  text-align: center;
-  padding: 15px;
-  background-color: var(--egg);
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-right: 100px;
-  width: 300px;
-  height: 150px;
-  box-shadow: 7px 7px 7px #f2f2f2;
-  border: 1px solid #f2f2f2;
-}
-
-.farve7 {
-  text-align: center;
-  padding: 15px;
-  background-color: var(--lyslilla);
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-right: 100px;
-  width: 300px;
-  height: 150px;
-  box-shadow: 7px 7px 7px #f2f2f2;
-  border: 1px solid #f2f2f2;
-}
-
-.farve8 {
-  text-align: center;
-  padding: 15px;
-  background-color: var(--mediumlilla);
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-right: 100px;
-  width: 300px;
-  height: 150px;
-  box-shadow: 7px 7px 7px #f2f2f2;
-  border: 1px solid #f2f2f2;
-}
-.farve9 {
-  text-align: center;
-  padding: 15px;
   background-color: var(--mørklilla);
   color: #FFFFFF;
   border-radius: 20px;
@@ -219,7 +183,7 @@ p {
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
-.farve10 {
+.farve6 {
   text-align: center;
   padding: 15px;
   background-color: var(--lysgrøn);
@@ -231,7 +195,7 @@ p {
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
-.farve11 {
+.farve7 {
   text-align: center;
   padding: 15px;
   background-color: var(--mørkgrøn);
@@ -343,9 +307,4 @@ change the style of the sidenav (less padding and a smaller font size) */
   cursor: pointer;
   text-decoration: none;
   margin-right: 10px;
-}
-
-
-#scriptoNav {
-  
 }
