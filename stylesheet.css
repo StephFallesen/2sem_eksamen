@@ -18,10 +18,11 @@
 /* General CSS */
 
 html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
-body { margin-left: 20%; margin-top: 5%;}
-p { font-size: 14px; }
-h1 { font-size: 40px; }
-h2 { font-size: 20px; }
+body { margin-left: 15%; margin-top: 5%;}
+p { font-size: 14px; color: var(--mørklilla);}
+h1 { font-size: 40px; color: var(--mørklilla);}
+h2 { font-size: 20px; color: var(--mørklilla);}
+h3 { color: var(--mørklilla);}
 
 /* Nav */
 #subscriptoNav {
@@ -47,6 +48,15 @@ align-items: center;
 }
 .navicon img {
   max-height: 25px;
+}
+/* Landing */
+#logolanding {
+  max-width: 25%;
+  padding-left: 20px;
+}
+#landingwelcome {
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -93,7 +103,7 @@ align-items: center;
 }
 
 .styleguideMain {
-  margin-left: 300px;
+  margin-left: 150px;
   margin-bottom: 70px;
 }
 
