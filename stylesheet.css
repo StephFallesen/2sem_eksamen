@@ -241,7 +241,13 @@ label {
 
 
 /* Caroline */
-
+.button {
+  background-color: var(--mørkpink);
+  border: none;
+  font-size: 16px;
+  padding: 14px 40px;
+  border-radius: 12px;
+}
 
 
 
