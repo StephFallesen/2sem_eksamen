@@ -18,11 +18,15 @@
 /* General CSS */
 
 html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
-body { margin-left: 15%; margin-top: 5%;}
-p { font-size: 14px; color: var(--mørklilla);}
+body { margin-left: 10%; margin-top: 5%;}
+p { font-size: 20px; color: var(--mørklilla);}
 h1 { font-size: 40px; color: var(--mørklilla);}
-h2 { font-size: 20px; color: var(--mørklilla);}
-h3 { color: var(--mørklilla);}
+h2 { font-size: 30px; color: var(--mørklilla);}
+h3 { font-size: 25px; color: var(--mørklilla);}
+
+
+
+/* Steph */
 
 /* Nav */
 #subscriptoNav {
@@ -58,6 +62,180 @@ align-items: center;
   display: flex;
   flex-direction: row;
 }
+
+/* Profile */
+
+.designer {
+  display: flex;
+  border-radius: 15px;
+  height: 30px;
+  width: 90px;
+  background-color: var(--mørkpink);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.subs {
+  display: flex;
+  border-radius: 15px;
+  height: 60px;
+  width: 300px;
+  background-color: var(--mørkpink);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.subs img {
+  width: 30px;
+  padding-right: 35px;
+  margin-left: -50px;
+}
+
+/* Countdown */
+#demo {
+  display: flex;
+  border-radius: 15px;
+  font-size: 25px;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+  background-color: var(--lysgrøn);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Add sub */
+.row {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.long {
+  background-color: var(--lyslilla);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Caroline */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fie */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Maja */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -295,8 +473,6 @@ change the style of the sidenav (less padding and a smaller font size) */
   display: flex;
   flex-wrap: wrap;
 }
-
-
 .spaces-header {
   display: flex;
   flex-direction: row;
@@ -310,10 +486,23 @@ change the style of the sidenav (less padding and a smaller font size) */
   display: inline-block;
   border: 0;
   padding: 16px 40px;
-  background: #dcbcfd;
+  background: var(--lyslilla);
   border-radius: 100px;
   font-size: 16px;
-  color: var(--primary);
+  color: var(--mørklilla);
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.logout {
+  margin-top: 50px;
+  display: inline-block;
+  border: 0;
+  padding: 16px 40px;
+  background: var(--pink);
+  border-radius: 100px;
+  font-size: 16px;
+  color: var(--mørklilla);
   cursor: pointer;
   text-decoration: none;
   margin-right: 10px;
