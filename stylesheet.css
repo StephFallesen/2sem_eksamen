@@ -18,11 +18,11 @@
 /* General CSS */
 
 html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
-/* body { margin-left: 10%; margin-top: 5%;} */
-p { font-size: 20px; color: var(--mørklilla);}
-h1 { font-size: 40px; color: var(--mørklilla);}
-h2 { font-size: 30px; color: var(--mørklilla);}
-h3 { font-size: 25px; color: var(--mørklilla);}
+body { margin-left: 10%; margin-top: 5%;}
+p { font-weight: 200; font-size: 20px; color: var(--mørklilla);}
+h1 { font-weight: 500; font-size: 40px; color: var(--mørklilla);}
+h2 { font-weight: 400; font-size: 30px; color: var(--mørklilla);}
+h3 { font-weight: 300; font-size: 25px; color: var(--mørklilla);}
 
 
 
@@ -55,7 +55,7 @@ align-items: center;
 }
 /* Landing */
 #logolanding {
-  max-width: 25%;
+  max-width: 40%;
   padding-left: 20px;
 }
 #landingwelcome {
@@ -158,18 +158,12 @@ label {
 .long {
   background: var(--lyslilla);
   border-radius: 100px;
-  font-size: 16px;
   color: var(--mørklilla);
   padding: 12px;
   margin: 10px 0;
   border: none;
   width: 100%;
   cursor: pointer;
-}
-
-span.price {
-  float: right;
-  color: grey;
 }
 
 
@@ -234,7 +228,7 @@ span.price {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .col-25 {
     margin-bottom: 20px;
@@ -371,7 +365,7 @@ span.price {
   justify-content: center;
 }
 
-.subscriptions1 .fa-plus-square { 
+.subscriptions1 .fa-plus-square {
   font-size: 50px;
   color: var(--mørklilla);
 }
