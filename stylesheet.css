@@ -273,9 +273,10 @@ label {
 
 .subscriptions{
   background-color: var(--pink);
-  margin: 30px auto;
-  padding: 20px;
+  margin: 20px auto;
+  height: 200px;
   width: 200px;
+  padding: 0 20px 20px 20px;
   border-radius: 20px;
   display: grid;
   grid-gap: 10px;
@@ -345,10 +346,10 @@ label {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 30px;
-  margin: 30px auto;
-  padding: 20px;
-  padding-bottom: 45px;
+  margin: 20px auto;
+  height: 200px;
   width: 200px;
+  padding: 0 20px 20px 20px;
   border-radius: 20px;
   border-style: dashed;
   text-decoration: none;
@@ -373,7 +374,6 @@ label {
 @media screen and (min-width: 610px) {
   .u {
       grid-template-columns: repeat(2,1fr);
-      grid-gap: 10px;
   }
   .use-send {
       padding: 10px 70px;
@@ -387,7 +387,6 @@ label {
   }
   .u {
       grid-template-columns: repeat(3,1fr);
-      grid-gap: 10px;
   }
   .use-send {
       padding: 15px 100px;
@@ -411,7 +410,60 @@ label {
 
 
 /* Maja */
+.license-list{
+  display: flex;
+  flex-direction: column;
+}
+.li-categories{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.li-categories p{
+  border: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+.li-categories .full{
+  background-color: #fcfaf0;
+  width: 80px;
+}
+.li-categories .all{
+  background-color: 
+}
+.li-categories .des{
+  background-color: #f09e9b;
+  width: 90px;
+}
+.li-categories .dev{
+  background-color: #cbebdb;
+  width: 120px;
+}
+.li-categories .man{
+  background-color: #f2d7ca;
+  width: 120px;
+}
+.li-categories .mar{
+  background-color: #e0f9f0;
+  width: 120px;
+}
+.sub-lic{
+  background-color: #fcfaf0;
+}
+.sub-lic .all{
 
+}
+
+@media (max-width: 800px) {
+  .license-list{
+    margin: 10px;
+  }
+  .li-categories{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+}
 
 
 
