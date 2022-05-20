@@ -430,9 +430,12 @@ span.price {
   border-radius: 20px;
   text-align: center;
 }
-.li-categories .all{
+.li-categories .full{
   background-color: #fcfaf0;
-  width: 70px;
+  width: 80px;
+}
+.li-categories .all{
+  background-color: 
 }
 .li-categories .des{
   background-color: #f09e9b;
@@ -449,6 +452,12 @@ span.price {
 .li-categories .mar{
   background-color: #e0f9f0;
   width: 120px;
+}
+.sub-lic{
+  background-color: #fcfaf0;
+}
+.sub-lic .all{
+
 }
 
 @media (max-width: 800px) {
