@@ -249,6 +249,10 @@ label {
   border-radius: 12px;
 }
 
+.boxed {
+  border: 1px solid green ;
+}
+
 
 
 
