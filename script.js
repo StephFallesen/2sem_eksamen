@@ -1,3 +1,15 @@
+//menu
+function openNav() {
+  document.getElementById("subscriptoNav").style.width = "100%";
+  document.getElementById("hamburger").style.marginLeft = "0";
+}
+
+function closeNav() {
+  document.getElementById("subscriptoNav").style.width = "0";
+  document.getElementById("hamburger").style.marginLeft= "0";
+}
+
+
 // Countdown
 // Set the date we're counting down to
 let countDownDate = new Date("June 31, 2022 12:00:00").getTime();
