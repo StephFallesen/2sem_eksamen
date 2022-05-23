@@ -804,12 +804,9 @@ label {
   border-radius: 20px;
   text-align: center;
 }
-.li-categories .full{
+.li-categories .all{
   background-color: #fcfaf0;
   width: 80px;
-}
-.li-categories .all{
-  background-color:
 }
 .li-categories .des{
   background-color: #f09e9b;
@@ -850,6 +847,11 @@ label {
   flex-direction: row;
   justify-content: space-between;
 }
+
+                                          .logo-names img {
+                                            width: 40px;
+                                            border-radius: 50px;
+                                        }
 
 @media screen and (min-width: 490px){
   .license-list{
