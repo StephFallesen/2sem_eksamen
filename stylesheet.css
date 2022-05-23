@@ -22,6 +22,9 @@ html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
 body { margin: 0%;}
 =======
 /* body { margin-left: 10%; margin-top: 5%;} */
+<<<<<<< HEAD
+>>>>>>> parent of 3d28b7b (Majas grid)
+=======
 >>>>>>> parent of 3d28b7b (Majas grid)
 p { font-weight: 200; font-size: 20px; color: var(--mørklilla);}
 h1 { font-weight: 500; font-size: 40px; color: var(--mørklilla);}
@@ -52,14 +55,36 @@ top: 0;
 left: 0;
 overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
 align-items: center;
 transition: 0.5s;
 =======
+=======
+>>>>>>> parent of 3d28b7b (Majas grid)
 transition: 0.5s;
 }
 #subscriptoNav a {
   text-align: center;
   align-items: center;
+<<<<<<< HEAD
+=======
+}
+
+.openbtn {
+  font-size: 40px;
+  cursor: pointer;
+  color: var(--mørklilla);
+  padding: 10px 15px;
+  border: none;
+  z-index: 10;
+  margin-left: 20px;
+  background-color: inherit;
+}
+.closebtn {
+  font-size: 40px;
+  color: var(--mørklilla);
+  text-decoration: none;
+>>>>>>> parent of 3d28b7b (Majas grid)
 }
 
 .openbtn {
@@ -117,15 +142,21 @@ transition: 0.5s;
   flex-direction: row;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .manpic {
   max-width: 90%;
   display: grid;
   grid-area: 'pic';
 =======
+=======
+>>>>>>> parent of 3d28b7b (Majas grid)
 #manpic {
   max-width: 40%;
   display: grid;
   grid-area: "pic";
+<<<<<<< HEAD
+>>>>>>> parent of 3d28b7b (Majas grid)
+=======
 >>>>>>> parent of 3d28b7b (Majas grid)
 }
 
@@ -148,6 +179,7 @@ transition: 0.5s;
   display: flex;
   align-items: center;
   align-content: center;
+<<<<<<< HEAD
 }
 .subssection {
   display: grid;
@@ -156,6 +188,8 @@ transition: 0.5s;
 .gridsection {
   display: grid;
   grid-template-rows: 2fr 2fr;
+=======
+>>>>>>> parent of 3d28b7b (Majas grid)
 }
 
 .programikon {
@@ -269,6 +303,39 @@ footer {
   }
 }
 =======
+}
+
+<<<<<<< HEAD
+>>>>>>> parent of 3d28b7b (Majas grid)
+=======
+@media screen and (min-width: 500px) {
+  .boksikon {
+    width: 400px;
+  }
+  #demo {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .boksikon {
+    width: 550px;
+  }
+  #demo {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .gridsection {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-grow: auto;
+  }
+  .boksikon {
+    width: 350px;
+  }
+  .openbtn {
+    visibility: inherit;
+  }
 }
 
 >>>>>>> parent of 3d28b7b (Majas grid)
