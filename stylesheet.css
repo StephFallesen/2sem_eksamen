@@ -124,6 +124,12 @@ transition: 0.5s;
   display: flex;
   flex-direction: row;
 }
+#manpic {
+  max-width: 40%;
+  display: grid;
+  grid-area: "pic";
+}
+
 
 .manpic {
   max-width: 90%;
@@ -261,6 +267,36 @@ footer {
   }
   #demo {
     width: 917px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .boksikon {
+    width: 400px;
+  }
+  #demo {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .boksikon {
+    width: 550px;
+  }
+  #demo {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .gridsection {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-grow: auto;
+  }
+  .boksikon {
+    width: 350px;
+  }
+  .openbtn {
+    visibility: inherit;
   }
 }
 
