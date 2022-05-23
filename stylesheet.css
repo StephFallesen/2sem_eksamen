@@ -18,7 +18,7 @@
 /* General CSS */
 
 html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
-body { margin: 0%;}
+body { margin: 0;}
 p { font-weight: 200; font-size: 20px; color: var(--mørklilla);}
 h1 { font-weight: 500; font-size: 40px; color: var(--mørklilla);}
 h2 { font-weight: 400; font-size: 30px; color: var(--mørklilla);}
@@ -325,9 +325,7 @@ footer {
   flex: 75%;
 }
 
-.col-25,
-.col-50,
-.col-75 {
+.col-25, .col-50, .col-75 {
   padding: 0 16px;
 }
 
@@ -408,6 +406,7 @@ label {
     pointer-events: auto;
 }
 
+
 .closebutton {
     background: var(--lyslilla);
     border-radius: 100px;
@@ -419,9 +418,8 @@ label {
     cursor: pointer;
 }
 
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
+@media (min-width: 400px) {
   .row {
     flex-direction: column;
   }
