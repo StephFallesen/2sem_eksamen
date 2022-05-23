@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
 
-    <script src="script.js" defer></script>
-    <title></title>
-  </head>
-  <body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<button id="hamburger" class="openbtn" onclick="openNav()">&#9776;</button>
-<nav id="subscriptoNav">
+  <script src="script.js" defer></script>
+  <title></title>
+</head>
+
+<body>
+
+  <button id="hamburger" class="openbtn" onclick="openNav()">&#9776;</button>
+  <nav id="subscriptoNav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#" class="navicon"><img src="iconer/search.png" alt=""></a>
     <a href="#" class="navicon"><img src="iconer/notification.png" alt=""></a>
@@ -24,42 +26,47 @@
     <a href="#" class="navicon"><img src="iconer/profile.png" alt=""></a>
     <a href="#" class="navicon"><img src="iconer/info.png" alt=""></a>
     <a href="#" class="navicon"><img src="iconer/cash.png" alt=""></a>
-</nav>
+  </nav>
 
-<section class="stephmain">
-  <img id="logolanding" src="billeder/logolilla.svg" alt="">
-  <div>
-    <h1>Welcome, Jesper</h1>
-    <div class="designer">Designer</div>
-  </div>
-  <div class="gridsection">
-    <img id="manpic" src="billeder/man.png" alt="">
+  <section class="stephmain">
+    <img id="logolanding" src="billeder/logolilla.svg" alt="">
+    <div>
+      <h1>Welcome, Jesper</h1>
+      <div class="designer">Designer</div>
+    </div>
 
-    <section id="subssection">
-      <h1>Your subscriptions:</h1>
-      <div class="boksikon">
-        <img class="programikon" src="billeder/adobe.png" alt="">
-        <p class="subs">Adobe Creative Cloud</p>
+    <div class="gridsection">
+      <img class="manpic" src="billeder/man.png" alt="">
+
+      <div id="subssection">
+        <h1>Your subscriptions:</h1>
+        <div class="boksikon">
+          <img class="programikon" src="billeder/adobe.png" alt="">
+          <p class="subs">Adobe Creative Cloud</p>
+        </div>
+
+        <div class="boksikon">
+          <img class="programikon" src="billeder/invision.svg" alt="">
+          <p class="subs">Invision</p>
+        </div>
+        <br>
       </div>
+    </div>
 
-      <div class="boksikon">
-        <img class="programikon" src="billeder/invision.svg" alt="">
-        <p class="subs">Invision</p>
-      </div>
-      <br>
-    </section>
-  </div>
+    <h2>Update your subcriptions in:</h2>
 
-  <h2>Update your subcriptions in:</h2>
+    <!-- countdown (Steph) -->
+    <div>
+      <p id="demo" class="responsivbox"></p>
+    </div>
+    <button class="btn" type="button">DO IT NOW</button>
 
-  <!-- countdown (Steph) -->
-  <div>
-    <p id="demo" class="responsivbox"></p>
-  </div>
-  <button class="btn" type="button">DO IT NOW</button>
+    <button class="logout" type="button">LOG OUT</button>
+  </section>
+  <footer>
+    <p>All rigths reserved by SubScripto 2022</p>
+  </footer>
 
-  <button class="logout" type="button">LOG OUT</button>
-</section>
+</body>
 
-  </body>
 </html>

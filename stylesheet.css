@@ -18,7 +18,7 @@
 /* General CSS */
 
 html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
-/* body { margin-left: 10%; margin-top: 5%;} */
+body { margin: 0;}
 p { font-weight: 200; font-size: 20px; color: var(--mørklilla);}
 h1 { font-weight: 500; font-size: 40px; color: var(--mørklilla);}
 h2 { font-weight: 400; font-size: 30px; color: var(--mørklilla);}
@@ -47,11 +47,13 @@ z-index: 5;
 top: 0;
 left: 0;
 overflow-x: hidden;
+align-items: center;
 transition: 0.5s;
 }
 #subscriptoNav a {
   text-align: center;
   align-items: center;
+  padding-top: 25px;
 }
 
 .openbtn {
@@ -70,11 +72,11 @@ transition: 0.5s;
   text-decoration: none;
 }
 
-.navicon {
-  position: relative;
-  display: inline-block;
-  padding-top: 50px;
+#subscriptoNav a {
+  text-align: center;
+  align-items: center;
 }
+
 .navicon img {
   max-height: 25px;
 }
@@ -88,10 +90,11 @@ transition: 0.5s;
   display: flex;
   flex-direction: row;
 }
-#manpic {
-  max-width: 40%;
+
+.manpic {
+  max-width: 90%;
   display: grid;
-  grid-area: "pic";
+  grid-area: 'pic';
 }
 
 
@@ -113,6 +116,14 @@ transition: 0.5s;
   display: flex;
   align-items: center;
   align-content: center;
+}
+#subssection {
+  display: grid;
+  grid-area: 'tabel';
+}
+.gridsection {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
 }
 
 .programikon {
@@ -144,6 +155,125 @@ transition: 0.5s;
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+footer {
+  height: 75px;
+  background-color: var(--gulhvid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 500px) {
+  .boksikon {
+    width: 400px;
+  }
+  #demo {
+    width: 400px;
+  }
+  .manpic {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .boksikon {
+    width: 550px;
+  }
+  #demo {
+    width: 550px;
+  }
+  .manpic {
+    max-width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .manpic {
+    max-width: 60%;
+  }
+  .gridsection {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "tabel pic";
+    grid-template-rows: 1fr;
+   }
+  .boksikon {
+    width: 350px;
+  }
+  .openbtn {
+    visibility: inherit;
+  }
+  #demo {
+    width: 790px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .boksikon {
+    width: 450px;
+  }
+  #demo {
+    width: 917px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .boksikon {
+    width: 400px;
+  }
+  #demo {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .boksikon {
+    width: 550px;
+  }
+  #demo {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .gridsection {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-grow: auto;
+  }
+  .boksikon {
+    width: 350px;
+  }
+  .openbtn {
+    visibility: inherit;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .boksikon {
+    width: 400px;
+  }
+  #demo {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .boksikon {
+    width: 550px;
+  }
+  #demo {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .gridsection {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-grow: auto;
+  }
+  .boksikon {
+    width: 350px;
+  }
+  .openbtn {
+    visibility: inherit;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -177,6 +307,7 @@ transition: 0.5s;
 }
 
 /* Add sub */
+
 .row {
   display: flex;
   width: 90%;
@@ -196,9 +327,7 @@ transition: 0.5s;
   flex: 75%;
 }
 
-.col-25,
-.col-50,
-.col-75 {
+.col-25, .col-50, .col-75 {
   padding: 0 16px;
 }
 
@@ -279,6 +408,7 @@ label {
     pointer-events: auto;
 }
 
+
 .closebutton {
     background: var(--lyslilla);
     border-radius: 100px;
@@ -290,9 +420,8 @@ label {
     cursor: pointer;
 }
 
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
+@media (min-width: 400px) {
   .row {
     flex-direction: column;
   }
@@ -675,12 +804,9 @@ label {
   border-radius: 20px;
   text-align: center;
 }
-.li-categories .full{
+.li-categories .all{
   background-color: #fcfaf0;
   width: 80px;
-}
-.li-categories .all{
-  background-color:
 }
 .li-categories .des{
   background-color: #f09e9b;
@@ -701,11 +827,34 @@ label {
 .sub-lic{
   background-color: #fcfaf0;
 }
-.sub-lic .all{
-
+.li-list{
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+}
+.sub-lic{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border-style: none;
+  background-color: #fcfaf0;
 }
 
-@media (max-width: 800px) {
+.sub-cat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+                                          .logo-names img {
+                                            width: 10%;
+
+                                            border-radius: 50px;
+                                        }
+
+@media screen and (min-width: 490px){
   .license-list{
     margin: 10px;
   }
@@ -714,8 +863,12 @@ label {
     flex-wrap: wrap;
 
   }
+  .logo-names img {
+    width: 40px;
+    margin-top: 15px;
+    border-radius: 50px;
 }
-
+}
 
 
 
@@ -948,6 +1101,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 .boxpink {
   padding: 20px 30px;
   margin: 20px;
+  z-index: 10;
   position: relative;
   display: flex;
   flex-direction: column;

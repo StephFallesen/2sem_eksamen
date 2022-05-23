@@ -1,0 +1,225 @@
+:root {
+    --mørklilla: #36244d;
+    --lyslilla: #dcbcfd;
+    --lyslilla-rgb: 220,188,253;
+    --egg: #fcf4f0;
+    --lysgrøn: #e0f9f0;
+    --gulhvid: #fcfaf0;
+    --pink: #f2d7ca;
+    --mørkpink: #f29e99;
+    --mørkgrøn: #cbebdb;
+  }
+  
+  /* General CSS */
+  
+  html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
+  p { font-size: 14px; color: var(--mørklilla);}
+  h1 { font-size: 40px; color: var(--mørklilla);}
+  h2 { font-size: 20px; color: var(--mørklilla);}
+  h3 { color: var(--mørklilla);}
+
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+#monthly {
+    left: 30px;
+}
+#yearly {
+    left: 1200px;
+}
+
+.form-box {
+    width: 380px;
+    height: 500px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.monthly {
+    background-color: var(--mørkgrøn);
+    width: 200px;
+    border-radius: 50px;
+}
+  
+.yearly {
+    background-color: var(--mørkgrøn);
+    width: 200px;
+    border-radius: 50px;
+}
+  
+.eco-collect {
+    display: grid;
+    grid-gap: 10px;
+    width: 100%;
+}
+  
+.economics {
+    background-color: var(--lysgrøn);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border-style: none;
+}
+  
+.economics .logo-names img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.logo-title h3 {
+    font-size: 15px;
+}
+  
+.price-licens {
+    display: none;
+}
+  
+.eco-cat {
+    display: none;
+}
+  
+.total-price {
+    background-color: var(--lysgrøn);
+    text-align: end;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 165px;
+}
+  
+.price-total {
+    color: var(--egg);
+    background-color: var(--mørklilla);
+    border: none;
+}
+.total-input {
+    width: 220px;
+    font-size: 20px;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px 0 var(--mørklilla);
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: var(--mørkgrøn);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons {
+    margin-bottom: 30px;
+    margin-left: 20%;
+    text-align: center;
+}
+.social-icons input {
+    padding: 10px 0;
+    border-style: none;
+    border-radius: 20px;
+    background-color: var(--mørklilla);
+    color: var(--egg);
+    text-align: center;
+}
+.input-group {
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+
+
+
+
+@media screen and (min-width: 490px) {
+    .form-box {
+        width: 680px;
+        height: 500px;
+        position: relative;
+        margin: 6% auto;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .eco-collect {
+      display: grid;
+      grid-gap: 30px;
+    }
+    .logo-names {
+      display: grid;
+      grid-template-columns: 45% 50%;
+    }
+    .economics {
+      background-color: var(--lysgrøn);
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      padding: 20px;
+      border-radius: 50px;
+      border-style: none;
+    }
+    .price-licens {
+     display: block;
+     text-align: end;
+    }
+    
+    .eco-cat {
+      display:block;
+      padding-left: 50px;
+      font-size: 20px;
+    }
+  
+    .economics {
+      width: 600px;
+    }
+    
+  }
+  
+  
+  @media screen and (min-width: 800px) {
+    .form-box {
+        width: 1100px;
+        height: 1000px;
+        position: relative;
+        margin: 6% auto;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .eco-collect {
+      display: grid;
+      grid-gap: 30px;
+    }
+    .economics {
+      background-color: var(--lysgrøn);
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      padding: 20px;
+      border-radius: 50px;
+      border-style: none;
+    }
+    .economics {
+      width: 950px;
+    }
+    .logo-names {
+      display: grid;
+      grid-template-columns: 30% 100%;
+    }
+  }
