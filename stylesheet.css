@@ -440,9 +440,26 @@ label {
   border-radius: 12px;
 }
 
-.boxed {
-  border: 1px solid green ;
+.profilebox  {
+    display: grid;
+    grid-gap: 10px;
+    width: 100%;
 }
+
+.cprofilebox {
+    background-color: var(--pink);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 35px;
+    border-style: none;
+}
+
+.cmail h3 {
+    font-size: 20px;
+}
+
 
 
 
