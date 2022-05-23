@@ -849,7 +849,8 @@ label {
 }
 
                                           .logo-names img {
-                                            width: 40px;
+                                            width: 10%;
+
                                             border-radius: 50px;
                                         }
 
@@ -862,6 +863,11 @@ label {
     flex-wrap: wrap;
 
   }
+  .logo-names img {
+    width: 40px;
+    margin-top: 15px;
+    border-radius: 50px;
+}
 }
 
 
