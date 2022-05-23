@@ -18,11 +18,11 @@
 /* General CSS */
 
 html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
-/* body { margin-left: 10%; margin-top: 5%;} */
-p { font-size: 20px; color: var(--mørklilla);}
-h1 { font-size: 40px; color: var(--mørklilla);}
-h2 { font-size: 30px; color: var(--mørklilla);}
-h3 { font-size: 25px; color: var(--mørklilla);}
+body { margin: 0%;}
+p { font-weight: 200; font-size: 20px; color: var(--mørklilla);}
+h1 { font-weight: 500; font-size: 40px; color: var(--mørklilla);}
+h2 { font-weight: 400; font-size: 30px; color: var(--mørklilla);}
+h3 { font-weight: 300; font-size: 25px; color: var(--mørklilla);}
 
 
 
@@ -62,6 +62,12 @@ align-items: center;
   display: flex;
   flex-direction: row;
 }
+.manpic {
+  max-width: 90%;
+  display: grid;
+  grid-area: 'pic';
+}
+
 
 /* Profile */
 
@@ -88,6 +94,14 @@ align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
+.subssection {
+  display: grid;
+  grid-area: 'tabel';
+}
+.gridsection {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
 
 .subs img {
   width: 30px;
@@ -108,7 +122,72 @@ align-items: center;
   align-content: center;
   justify-content: center;
 }
+footer {
+  height: 75px;
+  background-color: var(--gulhvid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+footer {
+  height: 75px;
+  background-color: var(--gulhvid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
 
+@media screen and (min-width: 500px) {
+  .boksikon {
+    width: 400px;
+  }
+  #demo {
+    width: 400px;
+  }
+  .manpic {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .boksikon {
+    width: 550px;
+  }
+  #demo {
+    width: 550px;
+  }
+  .manpic {
+    max-width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .manpic {
+    max-width: 60%;
+  }
+  .gridsection {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "tabel pic";
+    grid-template-rows: 1fr;
+   }
+  .boksikon {
+    width: 350px;
+  }
+  .openbtn {
+    visibility: inherit;
+  }
+  #demo {
+    width: 790px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .boksikon {
+    width: 450px;
+  }
+  #demo {
+    width: 917px;
+  }
+}
 /* Add sub */
 .row {
   display: flex;
