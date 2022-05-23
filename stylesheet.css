@@ -19,19 +19,14 @@
 
 html { font-family: 'Darker Grotesque', 'Poppins', sans-serif; }
 /* body { margin-left: 10%; margin-top: 5%;} */
-p { font-weight: 200; font-size: 20px; color: var(--mørklilla);}
-h1 { font-weight: 500; font-size: 40px; color: var(--mørklilla);}
-h2 { font-weight: 400; font-size: 30px; color: var(--mørklilla);}
-h3 { font-weight: 300; font-size: 25px; color: var(--mørklilla);}
+p { font-size: 20px; color: var(--mørklilla);}
+h1 { font-size: 40px; color: var(--mørklilla);}
+h2 { font-size: 30px; color: var(--mørklilla);}
+h3 { font-size: 25px; color: var(--mørklilla);}
 
 
 
 /* Steph */
-
-.stephmain {
-  width: 80%;
-  margin: auto;
-}
 
 /* Nav */
 #subscriptoNav {
@@ -41,33 +36,13 @@ flex-direction: column;
 justify-content: center;
 background-color: var(--gulhvid);
 width: 100px;
-height: 101vh;
+height: 100%;
 position: fixed;
-z-index: 5;
+z-index: 1;
 top: 0;
 left: 0;
 overflow-x: hidden;
-transition: 0.5s;
-}
-#subscriptoNav a {
-  text-align: center;
-  align-items: center;
-}
-
-.openbtn {
-  font-size: 40px;
-  cursor: pointer;
-  color: var(--mørklilla);
-  padding: 10px 15px;
-  border: none;
-  z-index: 10;
-  margin-left: 20px;
-  background-color: inherit;
-}
-.closebtn {
-  font-size: 40px;
-  color: var(--mørklilla);
-  text-decoration: none;
+align-items: center;
 }
 
 .navicon {
@@ -80,20 +55,13 @@ transition: 0.5s;
 }
 /* Landing */
 #logolanding {
-  max-width: 40%;
+  max-width: 25%;
   padding-left: 20px;
-  transform: translateX(50%);
 }
 #landingwelcome {
   display: flex;
   flex-direction: row;
 }
-#manpic {
-  max-width: 40%;
-  display: grid;
-  grid-area: "pic";
-}
-
 
 /* Profile */
 
@@ -111,25 +79,20 @@ transition: 0.5s;
 
 .subs {
   display: flex;
-  align-items: center;
-  align-content: center;
-}
-
-.programikon {
-  width: 35px;
-  margin-left: 35px;
-  display: grid;
-}
-.boksikon {
-  display: grid;
-  grid-template-columns: 0.2fr 1fr;
-  grid-gap: 30px;
-  align-items: center;
   border-radius: 15px;
-  height: 70px;
+  height: 60px;
   width: 300px;
   background-color: var(--mørkpink);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   margin-bottom: 20px;
+}
+
+.subs img {
+  width: 30px;
+  padding-right: 35px;
+  margin-left: -50px;
 }
 
 /* Countdown */
@@ -144,36 +107,6 @@ transition: 0.5s;
   align-items: center;
   align-content: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 500px) {
-  .boksikon {
-    width: 400px;
-  }
-  #demo {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 650px) {
-  .boksikon {
-    width: 550px;
-  }
-  #demo {
-    width: 550px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .gridsection {
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    flex-grow: auto;
-  }
-  .boksikon {
-    width: 350px;
-  }
-  .openbtn {
-    visibility: inherit;
-  }
 }
 
 /* Add sub */
@@ -225,12 +158,18 @@ label {
 .long {
   background: var(--lyslilla);
   border-radius: 100px;
+  font-size: 16px;
   color: var(--mørklilla);
   padding: 12px;
   margin: 10px 0;
   border: none;
   width: 100%;
   cursor: pointer;
+}
+
+span.price {
+  float: right;
+  color: grey;
 }
 
 
@@ -291,10 +230,11 @@ label {
 }
 
 
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .col-25 {
     margin-bottom: 20px;
@@ -303,17 +243,7 @@ label {
 
 
 /* Caroline */
-.button {
-  background-color: var(--mørkpink);
-  border: none;
-  font-size: 16px;
-  padding: 14px 40px;
-  border-radius: 12px;
-}
 
-.boxed {
-  border: 1px solid green ;
-}
 
 
 
@@ -329,8 +259,6 @@ label {
 
 
 /* Fie */
-
-/* Check Site */
 .use1 {
   text-align: center;
   font-size: 35px;
@@ -472,179 +400,6 @@ label {
   }
 }
 
-/* Login */
-
-.login-body {
-  background: var(--mørklilla);
-  margin: 0;
-  padding: 0;
-}
-
-.login-logo {
-  margin: 30px auto;
-  padding: 20px;
-  width: 250px;
-}
-
-.login-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 330px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.login-box h1 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
-
-.login-box .user-box {
-  position: relative;
-}
-
-.login-box .user-box input {
-  width: 100%;
-  font-size: 16px;
-  color: var(--mørklilla);
-  margin-bottom: 30px;
-  border: none;
-  border-radius: 30px;
-  outline: none;
-  padding: 10px;
-}
-
-.checkbox {
-  text-align: center;
-  color: var(--egg);
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-#rememberMe {
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-}
-
-
-.forgot {
-  color: var(--egg);
-  font-size: 20px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.forgot {
-    text-decoration: none;
-}
-
-
-.login-button {
-  background-color: var(--lyslilla);
-  padding: 10px 40px;
-  border-style: none;
-  border-radius: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.log-button {
-    text-align: center;
-}
-
-.quarter-circle-bottom-left{
-  width: 200px;
-  height: 200px;
-  background: #F29E99;
-  border-radius: 0 200px 0 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: -100;
-}
-
-
-@media screen and (min-width: 490px) {
-  .login-box {
-      width: 400px;
-    }
-    .login-button {
-      padding: 10px 60px;
-    }
-     .login-logo img {
-        left: 0;
-    }
-    .quarter-circle-bottom-left{
-      width: 350px;
-      height: 350px;
-      border-radius: 0 350px 0 0;
-    }
-  .checkbox {
-      text-align: center;
-      color: var(--egg);
-      font-size: 20px;
-      cursor: pointer;
-    }
-    .forgot p {
-      color: var(--egg);
-      font-size: 20px;
-      text-align: center;
-      cursor: pointer;
-    }
-}
-
-@media screen and (min-width: 800px) {
-  .login-box h1 {
-      color: var(--mørklilla);
-      font-size: 60px;
-    }
-  .login-box {
-      width: 500px;
-    }
-    .login-button {
-      padding: 15px 90px;
-    }
-    .quarter-circle-bottom-left{
-      width: 300px;
-      height: 300px;
-      border-radius: 0 300px 0 0;
-    }
-    .login-logo {
-      width: 350px;
-      float: left;
-    }
-    .background {
-      position: fixed;
-      top: 0px;
-      right: 0px;
-      width: 60%;
-      height: 100%;
-      background-color: var(--pink);
-      z-index: -110;
-    }
-    .login-box .user-box input {
-      font-size: 20px;
-      padding:15px;
-    }
-    .checkbox {
-      text-align: center;
-      color: var(--mørklilla);
-      font-size: 20px;
-      cursor: pointer;
-    }
-    .forgot {
-      color: var(--mørklilla);
-      font-size: 20px;
-      text-align: center;
-    }
-}
 
 
 
@@ -698,14 +453,28 @@ label {
   background-color: #e0f9f0;
   width: 120px;
 }
+.li-list{
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+}
 .sub-lic{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border-style: none;
   background-color: #fcfaf0;
 }
-.sub-lic .all{
 
+.sub-cat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media (max-width: 800px) {
+@media screen and (min-width: 490px){
   .license-list{
     margin: 10px;
   }
@@ -948,7 +717,6 @@ change the style of the sidenav (less padding and a smaller font size) */
 .boxpink {
   padding: 20px 30px;
   margin: 20px;
-  z-index: 10;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -987,7 +755,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 }
 .logout {
   margin-top: 50px;
-  display: flex;
+  display: inline-block;
   border: 0;
   padding: 16px 40px;
   background: var(--pink);
@@ -997,5 +765,4 @@ change the style of the sidenav (less padding and a smaller font size) */
   cursor: pointer;
   text-decoration: none;
   margin-right: 10px;
-
 }
