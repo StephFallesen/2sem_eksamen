@@ -53,22 +53,7 @@ transition: 0.5s;
 #subscriptoNav a {
   text-align: center;
   align-items: center;
-}
-
-.openbtn {
-  font-size: 40px;
-  cursor: pointer;
-  color: var(--mørklilla);
-  padding: 10px 15px;
-  border: none;
-  z-index: 10;
-  margin-left: 20px;
-  background-color: inherit;
-}
-.closebtn {
-  font-size: 40px;
-  color: var(--mørklilla);
-  text-decoration: none;
+  padding-top: 25px;
 }
 
 .openbtn {
@@ -92,25 +77,6 @@ transition: 0.5s;
   align-items: center;
 }
 
-.openbtn {
-  font-size: 40px;
-  cursor: pointer;
-  color: var(--mørklilla);
-  padding: 10px 15px;
-  border: none;
-  z-index: 10;
-  margin-left: 20px;
-  background-color: inherit;
-}
-.closebtn {
-  font-size: 40px;
-  color: var(--mørklilla);
-  text-decoration: none;
-.navicon {
-  position: relative;
-  display: inline-block;
-  padding-top: 50px;
-}
 .navicon img {
   max-height: 25px;
 }
@@ -124,12 +90,6 @@ transition: 0.5s;
   display: flex;
   flex-direction: row;
 }
-#manpic {
-  max-width: 40%;
-  display: grid;
-  grid-area: "pic";
-}
-
 
 .manpic {
   max-width: 90%;
@@ -156,8 +116,8 @@ transition: 0.5s;
   display: flex;
   align-items: center;
   align-content: center;
-
-.subssection {
+}
+#subssection {
   display: grid;
   grid-area: 'tabel';
 }
@@ -204,14 +164,6 @@ footer {
   justify-content: center;
   margin-top: 50px;
 }
-footer {
-  height: 75px;
-  background-color: var(--gulhvid);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
 
 @media screen and (min-width: 500px) {
   .boksikon {
@@ -244,13 +196,6 @@ footer {
     grid-template-areas: "tabel pic";
     grid-template-rows: 1fr;
    }
-}
-@media screen and (min-width: 1000px) {
-  .gridsection {
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    flex-grow: auto;
-  }
   .boksikon {
     width: 350px;
   }
