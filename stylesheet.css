@@ -948,6 +948,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 .boxpink {
   padding: 20px 30px;
   margin: 20px;
+  z-index: 10;
   position: relative;
   display: flex;
   flex-direction: column;
