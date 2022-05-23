@@ -830,11 +830,28 @@ label {
 .sub-lic{
   background-color: #fcfaf0;
 }
-.sub-lic .all{
-
+.li-list{
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+}
+.sub-lic{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border-style: none;
+  background-color: #fcfaf0;
 }
 
-@media (max-width: 800px) {
+.sub-cat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 490px){
   .license-list{
     margin: 10px;
   }
@@ -844,7 +861,6 @@ label {
 
   }
 }
-
 
 
 
