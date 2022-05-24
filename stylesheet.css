@@ -85,7 +85,7 @@ transition: 0.5s;
 
 /* Landing */
 #logolanding {
-  margin-left: 20%;
+  /* margin-left: 20%; */
   margin-top: 5%;
   max-width: 30%;
 }
@@ -102,18 +102,6 @@ transition: 0.5s;
 
 
 /* Profile */
-
-.designer {
-  display: flex;
-  border-radius: 15px;
-  height: 30px;
-  width: 90px;
-  background-color: var(--mørkpink);
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  margin-top: -20px;
-}
 
 .subs {
   display: flex;
@@ -161,11 +149,14 @@ transition: 0.5s;
 }
 footer {
   height: 75px;
-  background-color: var(--gulhvid);
+  background-color: var(--mørklilla);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
+}
+footer p {
+  color: var(--egg);
 }
 
 @media screen and (min-width: 500px) {
@@ -354,33 +345,295 @@ label {
 
 
 /* Caroline */
-.button {
-  background-color: var(--mørkpink);
+
+#caroinput {
+  background-color: var(--pink);
+  text-align: left;
   border: none;
-  font-size: 16px;
-  padding: 14px 40px;
-  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
 }
 
-.profilebox  {
+
+.form-box {
+    width: 380px;
+    height: 500px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.caroform {
+    background-color: var(--pink);
+    width: 200px;
+    border-radius: 50px;
+}
+.eco-collect {
     display: grid;
     grid-gap: 10px;
     width: 100%;
 }
 
-.cprofilebox {
+.carobox {
     background-color: var(--pink);
     display: grid;
-    grid-template-rows: repeat(3,1fr);
-    width: 18.75rem;
+    grid-template-columns: 55% 35% 0% 0%;
+    width: 90%;
     padding: 5px 20px;
-    border-radius: 35px;
+    border-radius: 50px;
     border-style: none;
 }
-
-.cmail h3 {
+.social-icons {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.total-input {
+    width: 220px;
     font-size: 20px;
 }
+
+.cmail {
+    background-color: var(--lysgrøn);
+    border-style:none;
+    width: 100%;
+}
+
+.price-licens {
+    display: none;
+}
+
+.eco-cat {
+    display: none;
+}
+
+.total-price {
+    background-color: var(--lysgrøn);
+    text-align: end;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 50px;
+}
+
+.seats_design {
+  display: inline-block;
+  border: 0;
+  padding: 16px 40px;
+  background: var(--mørkpink);
+  border-radius: 100px;
+  font-size: 16px;
+  color: var(--egg);
+  text-decoration: none;
+  margin-right: 10px;
+}
+.btn_design {
+  display: inline-block;
+  border: 0;
+  padding: 16px 40px;
+  background: var(--mørkpink);
+  border-radius: 100px;
+  font-size: 16px;
+  color: var(--egg);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.totalbtn {
+  display: inline-block;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 540px;
+  border: 0;
+  padding: 16px 40px;
+  background: var(--mørklilla);
+  border-radius: 100px;
+  font-size: 16px;
+  color: var(--egg);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.total-input {
+    width: 220px;
+    font-size: 20px;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px 0 var(--mørklilla);
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: var(--mørkgrøn);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons {
+    margin-bottom: 30px;
+    margin-left: 20%;
+    text-align: center;
+}
+.social-icons input {
+    padding: 10px 0;
+    border-style: none;
+    border-radius: 20px;
+    background-color: var(--mørklilla);
+    color: var(--egg);
+    text-align: center;
+    border
+}
+@media screen (min-width: 490px) and (max-width: 625px) {
+  .totalbtn {
+    width: 115%;
+  }
+}
+
+@media screen and (min-width: 490px) {
+    .form-box {
+        width: 680px;
+        height: 500px;
+        position: relative;
+        margin: 6% auto;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .eco-collect {
+      display: grid;
+      grid-gap: 10px;
+      width: 500px;
+    }
+
+    .carobox {
+      grid-template-columns: 35% 20% 20% 20%;
+      width: 100%;
+    }
+    .price-licens {
+     display: block;
+     text-align: end;
+     background-color: var(--lysgrøn);
+     border-style: none;
+     width: 50px;
+     font-size: 15px;
+    }
+    #caroinput .total-price {
+        background-color: var(--lysgrøn);
+        text-align: right;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        width: 50px;
+    }
+
+    .eco-cat {
+      display:block;
+      background-color: var(--lysgrøn);
+      border-style:none;
+      font-size: 15px;
+      width: 150px;
+    }
+
+    .economics {
+      width: 600px;
+    }
+    .logo-title {
+        font-size: 15px;
+    }
+
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .form-box {
+        width: 1100px;
+        height: 1000px;
+        position: relative;
+        margin: 6% auto;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .social-icons {
+        margin-bottom: 30px;
+        margin-left: 120%;
+    }
+    .social-icons input {
+        padding: 30px 0;
+        border-style: none;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 30px;
+        width: 400px;
+    }
+    .eco-collect {
+      display: grid;
+      grid-gap: 10px;
+    }
+    .economics {
+      background-color: var(--lysgrøn);
+      display: grid;
+      grid-template-columns: 15% 30% 25% 20% 10%;
+      padding: 20px;
+      border-radius: 50px;
+      border-style: none;
+    }
+    .economics {
+      width: 950px;
+    }
+    .logo-names {
+      display: grid;
+      grid-template-columns: 30% 100%;
+    }
+    .button-box {
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 10px 0 var(--mørklilla);
+        border-radius: 30px;
+    }
+    .toggle-btn {
+        padding: 20px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        position: relative;
+        font-size: 14px;
+    }
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: var(--mørkgrøn);
+        border-radius: 30px;
+        transition: .5s;
+    }
+  }
+
+
+
+
+
+
+
 
 
 

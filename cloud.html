@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title></title>
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="cloud.js" defer></script>
 
-<div id="landingwelcome">
-  <h1>CREATIVE CLOUD</h1>
-</div>
+  <title>Adobe Creative Cloud</title>
+</head>
 
-<button class="btn">Design</button>
+<body>
+  <button id="hamburger" class="openbtn" onclick="openNav()">&#9776;</button>
+  <nav id="subscriptoNav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" class="navicon"><img src="iconer/search.png" alt=""></a>
+    <a href="#" class="navicon"><img src="iconer/notification.png" alt=""></a>
+    <a href="#" class="navicon"><img src="iconer/categories.png" alt=""></a>
+    <a href="#" class="navicon"><img src="iconer/plus.png" alt=""></a>
+    <a href="#" class="navicon"><img src="iconer/profile.png" alt=""></a>
+    <a href="#" class="navicon"><img src="iconer/info.png" alt=""></a>
+    <a href="#" class="navicon"><img src="iconer/cash.png" alt=""></a>
+  </nav>
 
-<p>Master Profile</p>
-<div class="profilebox">
-    <div class="cprofilebox">
-        <div class="cmail"><h3>Design@abtion.com</h3></div>
-        <div class="cmonthly">Monthly</div>
-        <div class="cprice">370$</div>
-</div>
+  <section class="stephmain">
+    <img id="logolanding" src="billeder/logolilla.svg" alt="">
+    <div id="landingwelcome">
+      <h1>CREATIVE CLOUD</h1>
+    </div>
 
-<div class="profilebox">
-    <div class="cprofilebox">
-        <div class="cmail"><h3>Password vault - open for all</h3></div>
-</div>
+    <button class="btn_design">Design</button>
+    <button class="seats_design">Users: 2</button>
 
-<p>Onboarded<p>
-  <div class="profilebox">
-      <div class="cprofilebox">
-          <div class="cmail"><h3>Bn@abtion.com</h3></div>
-          <div class="cmonthly">Monthly</div>
-          <div class="cprice">370$</div>
-  </div>
+    <form id="caroform" class="input-group">
+      <button class="totalbtn">Total: $1070</button>
+      <div class="eco-collect">
+        <h3>Master profile</h3>
+        <div class="carobox">
+          <input id="caroinput" type="text" class="cmail" value="design@abtion.com" readonly>
+          <input id="caroinput" type="text" class="eco-cat" value="Design" readonly>
+          <input id="caroinput" type="text" class="price-licens" value="Monthly" readonly>
+          <input id="caroinput" type="text" class="total-price" value="$370" readonly>
+        </div>
+        <div class="carobox">
+          <input id="caroinput" type="text" class="logo-title" value="Password Vault" readonly>
+          <input id="caroinput" class="eco-cat">
+          <input id="caroinput" class="price-licens">
+          <input id="caroinput" type="text" class="total-price" value="Click to open" readonly>
+        </div>
+        <h3>Onboarded members</h3>
+        <div class="carobox">
+          <input id="caroinput" type="text" class="cmail" value="design@abtion.com" readonly>
+          <input id="caroinput" type="text" class="eco-cat" value="Last active:" readonly>
+          <input id="caroinput" type="text" class="price-licens" value="dato" readonly>
+          <input id="caroinput" type="text" class="total-price" value="$370" readonly>
+        </div>
+      </div>
+    </form>
+  </section>
+  <footer>
+    <p>All rigths reserved by SubScripto 2022</p>
+  </footer>
+</body>
 
-
-  </body>
 </html>
