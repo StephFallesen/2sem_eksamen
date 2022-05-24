@@ -371,8 +371,8 @@ label {
 .cprofilebox {
     background-color: var(--pink);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 100%;
+    grid-template-rows: repeat(3,1fr);
+    width: 18.75rem;
     padding: 5px 20px;
     border-radius: 35px;
     border-style: none;
