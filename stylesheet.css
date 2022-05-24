@@ -1029,34 +1029,29 @@ a {
   display: flex;
   flex-direction: column;
 }
-.licategories{
+.licategories {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px;
 }
+
 .licategories p{
   border-radius: 20px;
   text-align: center;
+  margin: 0;
 }
-.licategories .full{
-  border:1px;
-  border-radius: 20px;
-  background-color: white;
-  border-style: solid;
-  border-color: lightgrey;
-  width: 120px;
-}
+
 .licategories .all{
-  border:none;
+  border: none;
   width: 150px;
 }
-.licategories {
-  margin: 20px;
+
+.filter {
   display: flex;
   justify-content: center;
-}
-.filter {
-  margin: 20px;
+  flex-wrap: wrap;
+  margin:5px;
 }
 .filter:hover {
   cursor: pointer;
@@ -1089,22 +1084,24 @@ a {
   background-color: #e0f9f0;
   width: 120px;
 }
-.sublic{
-  background-color: #fcfaf0;
-}
+
 .lilist{
+  margin-top: 40px;
   display: grid;
   grid-gap: 10px;
   width: 95%;
 }
 .sublic{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 15% 50% 35%;
   width: 100%;
   padding: 5px 20px;
   border-radius: 50px;
   border-style: none;
   background-color: #fcfaf0;
+}
+.sublic p {
+  padding-left: 10px;
 }
 
 .sub-cat{
@@ -1115,28 +1112,26 @@ a {
   text-align: center;
 }
 
-
-
-                                          .logo-names img {
-                                            width: 10%;
-
-                                            border-radius: 50px;
-                                        }
+.logo-sub{
+  padding-left: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-sub img {
+    width: 40px;
+    border-radius: 50px;
+}
 
 @media screen and (min-width: 490px){
   .license-list{
     margin: 10px;
   }
-  .licategories{
-    flex-direction: row;
-    flex-wrap: wrap;
-
-  }
-  .logo-names img {
+  .logo-sub img {
     width: 40px;
     margin-top: 15px;
     border-radius: 50px;
-}
+  }
 }
 
 
