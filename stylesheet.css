@@ -142,7 +142,7 @@ transition: 0.5s;
   height: 100px;
   width: 300px;
   text-align: center;
-  background-color: var(--lysgrøn);
+  background-color: var(--pink);
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -351,10 +351,16 @@ label {
   text-align: left;
   border: none;
   outline: none;
-  font-size: 15px;
   width: 100%;
+  margin: 0;
 }
 
+a {
+  text-decoration: none;
+  display: inline-flex;
+  font-size: inherit;
+  color: inherit;
+}
 
 .form-box {
     width: 380px;
@@ -384,6 +390,7 @@ label {
     padding: 5px 20px;
     border-radius: 50px;
     border-style: none;
+    align-items: center;
 }
 .social-icons {
     margin-bottom: 30px;
@@ -1401,7 +1408,7 @@ change the style of the sidenav (less padding and a smaller font size) */
   margin-right: 10px;
 }
 .logout {
-  margin-top: 50px;
+  margin-top: 150px;
   display: flex;
   border: 0;
   padding: 16px 40px;
