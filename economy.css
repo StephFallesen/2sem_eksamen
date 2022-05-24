@@ -32,10 +32,9 @@
 
 .form-box {
     width: 380px;
-    height: 500px;
+    height: 700px;
     position: relative;
     margin: 6% auto;
-    padding: 5px;
     overflow: hidden;
 }
 
@@ -142,7 +141,6 @@
     background-color: var(--mørklilla);
     color: var(--egg);
     text-align: center;
-    border
 }
 .input-group {
     position: absolute;
@@ -158,7 +156,7 @@
 @media screen and (min-width: 490px) {
     .form-box {
         width: 680px;
-        height: 500px;
+        height: 1100px;
         position: relative;
         margin: 6% auto;
         padding: 5px;
@@ -193,12 +191,13 @@
       border-style: none;
     }
     .price-licens {
-     display: block;
-     text-align: end;
-     background-color: var(--lysgrøn);
-     border-style: none;
-     width: 50px;
-     font-size: 15px;
+        display: block;
+        text-align: end;
+        background-color: var(--lysgrøn);
+        border-style: none;
+        width: 50px;
+        font-size: 15px;
+        outline:none;
     }
     .total-price {
         background-color: var(--lysgrøn);
@@ -212,9 +211,10 @@
     .eco-cat {
       display:block;
       background-color: var(--lysgrøn);
-      border-style:none;
+      border:none;
       font-size: 15px;
       width: 150px;
+      outline:none;
     }
   
     .economics {
@@ -222,6 +222,7 @@
     }
     .logo-title {
         font-size: 15px;
+        outline:none;
     }
     
   }
@@ -230,7 +231,7 @@
   @media screen and (min-width: 800px) {
     .form-box {
         width: 1100px;
-        height: 1000px;
+        height: 1150px;
         position: relative;
         margin: 6% auto;
         padding: 5px;
@@ -259,13 +260,25 @@
       padding: 20px;
       border-radius: 50px;
       border-style: none;
-    }
-    .economics {
       width: 950px;
     }
     .logo-names {
       display: grid;
       grid-template-columns: 30% 100%;
+    }
+    .logo-title {
+        font-size: 20px;
+    }
+    .price-licens {
+        font-size: 20px;
+    }
+    .total-price {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .eco-cat {
+      font-size: 20px;
     }
     .button-box {
         width: 220px;
