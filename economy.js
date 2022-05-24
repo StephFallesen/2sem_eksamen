@@ -13,3 +13,6 @@ function monthly() {
     y.style.left = "1200px";
     btn.style.left = "0";
 }
+
+
+  

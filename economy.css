@@ -72,8 +72,10 @@
     border-radius: 50px;
 }
 
-.logo-title h3 {
-    font-size: 15px;
+.logo-title {
+    background-color: var(--lysgrøn);
+    border-style:none;
+    width: 150px;
 }
   
 .price-licens {
@@ -90,7 +92,7 @@
     border: none;
     outline: none;
     font-size: 15px;
-    width: 165px;
+    width: 70px;
 }
   
 .price-total {
@@ -140,12 +142,14 @@
     background-color: var(--mørklilla);
     color: var(--egg);
     text-align: center;
+    border
 }
 .input-group {
     position: absolute;
     width: 280px;
     transition: .5s;
 }
+
 
 
 
@@ -160,18 +164,30 @@
         padding: 5px;
         overflow: hidden;
     }
+
+    .social-icons {
+        margin-bottom: 30px;
+        margin-left: 75%;
+    }
+    .social-icons input {
+        padding: 10px 0;
+        border-style: none;
+        border-radius: 20px;
+        text-align: center;
+    }
     .eco-collect {
       display: grid;
-      grid-gap: 30px;
+      grid-gap: 10px;
+      width: 500px;
     }
-    .logo-names {
-      display: grid;
-      grid-template-columns: 45% 50%;
+    .economics .logo-names img {
+        width: 60px;
+        border-radius: 50px;
     }
     .economics {
       background-color: var(--lysgrøn);
       display: grid;
-      grid-template-columns: repeat(5,1fr);
+      grid-template-columns: 15% 30% 25% 20% 10%;
       padding: 20px;
       border-radius: 50px;
       border-style: none;
@@ -179,16 +195,33 @@
     .price-licens {
      display: block;
      text-align: end;
+     background-color: var(--lysgrøn);
+     border-style: none;
+     width: 50px;
+     font-size: 15px;
+    }
+    .total-price {
+        background-color: var(--lysgrøn);
+        text-align: end;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        width: 50px;
     }
     
     .eco-cat {
       display:block;
-      padding-left: 50px;
-      font-size: 20px;
+      background-color: var(--lysgrøn);
+      border-style:none;
+      font-size: 15px;
+      width: 150px;
     }
   
     .economics {
       width: 600px;
+    }
+    .logo-title {
+        font-size: 15px;
     }
     
   }
@@ -203,14 +236,26 @@
         padding: 5px;
         overflow: hidden;
     }
+    .social-icons {
+        margin-bottom: 30px;
+        margin-left: 120%;
+    }
+    .social-icons input {
+        padding: 30px 0;
+        border-style: none;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 30px;
+        width: 400px;
+    }
     .eco-collect {
       display: grid;
-      grid-gap: 30px;
+      grid-gap: 10px;
     }
     .economics {
       background-color: var(--lysgrøn);
       display: grid;
-      grid-template-columns: repeat(5,1fr);
+      grid-template-columns: 15% 30% 25% 20% 10%;
       padding: 20px;
       border-radius: 50px;
       border-style: none;
@@ -221,5 +266,31 @@
     .logo-names {
       display: grid;
       grid-template-columns: 30% 100%;
+    }
+    .button-box {
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 10px 0 var(--mørklilla);
+        border-radius: 30px;
+    }
+    .toggle-btn {
+        padding: 20px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        position: relative;
+        font-size: 14px;
+    }
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: var(--mørkgrøn);
+        border-radius: 30px;
+        transition: .5s;
     }
   }
