@@ -1087,14 +1087,9 @@ a {
 
 .lilist{
   margin-top: 40px;
-<<<<<<< Updated upstream
   display: flex;
   flex-direction: column;
   padding: 10px;
-=======
-  display: grid;
-  grid-gap: 10px;
->>>>>>> Stashed changes
   width: 95%;
 }
 .sublic{
