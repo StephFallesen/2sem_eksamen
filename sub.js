@@ -24,24 +24,24 @@ document.getElementById("close").addEventListener("click", function(){
 
 //Dropdown Category
 function dropDown() {
-  document.getElementById('cte').classList.toggle("show")
+  document.getElementById('cte').classList.toggle("show");
 }
 let categoryArray = new Array("Category", "Development", "Design", "Management", "Marketing");
 
   let dropdown = document.getElementById('cte');
 
   for (let i = 0; i < categoryArray.length; ++i) {
-    dropdown[dropdown.length] = new Option(categoryArray[i])
+    dropdown[dropdown.length] = new Option(categoryArray[i]);
   }
 
   //Dropdown Payment
   function moneyFunc() {
-    document.getElementById('pay').classList.toggle("show")
+    document.getElementById('pay').classList.toggle("show");
   }
   let paymentArray = new Array("Paymentplan", "Monthly", "Yearly");
 
     let money = document.getElementById('pay');
 
     for (let i = 0; i < paymentArray.length; ++i) {
-      money[money.length] = new Option(paymentArray[i])
+      money[money.length] = new Option(paymentArray[i]);
     }
