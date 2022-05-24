@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>
+    <script scr="licences.js" defer></script>
     <title></title>
   </head>
   <body>
@@ -13,16 +14,17 @@
     <section class="license-list">
       <h1>Subscriptions and Licenses</h1>
 
-      <div class="li-categories">
-        <p class="all">All</p>
-        <p class="des">Design</p>
-        <p class="dev">Development</p>
-        <p class="man">Management</p>
-        <p class="mar">Marketing</p>
+      <div class="licategories">
+        <span class="filter" data-filter="full"><p class="full">Full list</p></span>
+        <span class="filter" data-filter="all"><p class="all">All Departments</p></span>
+        <span class="filter" data-filter="des"><p class="des">Design</p></span>
+        <span class="filter" data-filter="dev"><p class="dev">Development</p></span>
+        <span class="filter" data-filter="man"><p class="man">Management</p></span>
+        <span class="filter" data-filter="mar"><p class="mar">Marketing</p></span>
       </div>
 
-      <div class="li-list">
-        <div class="sub-lic">
+      <div class="lilist">
+        <div class="sublic" data-filter="des">
           <div class="logo-names"><img src="billeder/browserstack.png" alt=""></div>
           <div class="sub-browser">
             <p>Browserstack</p>
@@ -31,25 +33,25 @@
             <p class="des">Design</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic"data-filter="all">
           <div class="logo-names"><img src="billeder/charles.png" alt=""></div>
           <div class="sub-char">
-            <p>Charles Proxy (license 1)</p>
+            <p>Charles Proxy (1)</p>
           </div>
           <div class="sub-cat">
-            <p class="all">All</p>
+            <p class="all">All Dep</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic" data-filter="all">
           <div class="logo-names"><img src="billeder/charles.png" alt=""></div>
           <div class="sub-char2">
-            <p>Charles Proxy (license 2)</p>
+            <p>Charles Proxy (2)</p>
           </div>
           <div class="sub-cat">
-            <p class="all">All</p>
+            <p class="all">All Dep</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic" data-filter="dev">
           <div class="logo-names"><img src="billeder/code-climate.jpg" alt=""></div>
           <div class="sub-code">
             <p>Code Climate</p>
@@ -58,17 +60,17 @@
             <p class="dev">Development</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic" data-filter="des">
           <div class="logo-names"><img src="billeder/creative-cloud.png" alt=""></div>
           <div class="sub-crea">
             <p>Creative Cloud</p>
           </div>
           <div class="sub-cat">
             <p class="des">Design</p>
-            <p class="all">All</p>
+            <p class="all">All Dep</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic" data-filter="mar">
           <div class="logo-names"><img src="billeder/dmarcian.jpg" alt=""></div>
           <div class="sub-dmar">
             <p>Dmarcian</p>
@@ -77,7 +79,7 @@
             <p class="mar">Marketing</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic" data-filter="des">
           <div class="logo-names"><img src="billeder/figma.png" alt=""></div>
           <div class="sub-fig">
             <p>Figma</p>
@@ -86,17 +88,17 @@
             <p class="des">Design</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic"data-filter="dev">
           <div class="logo-names"><img src="billeder/github.png" alt=""></div>
           <div class="sub-git">
             <p>Github</p>
           </div>
           <div class="sub-cat">
             <p class="dev">Development</p>
-            <p>All</p>
+            <p class="all">All Dep</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic" data-filter="dev">
           <div class="logo-names"><img src="billeder/netlify.png" alt=""></div>
           <div class="sub-net">
             <p>Netlify</p>
@@ -105,7 +107,7 @@
             <p class="dev">Development</p>
           </div>
         </div>
-        <div class="sub-lic">
+        <div class="sublic"data-filter="des">
           <div class="logo-names"><img src="billeder/webflow1.png" alt=""></div>
           <div class="sub-web">
             <p>Webflow</p>
@@ -121,6 +123,6 @@
     <footer>
       <p>All rigths reserved by SubScripto 2022</p>
     </footer>
-
+    <script scr="licences.js" defer></script>
   </body>
 </html>
