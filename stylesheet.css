@@ -135,7 +135,7 @@ transition: 0.5s;
 }
 
 /* Countdown */
-#demo {
+#count {
   display: flex;
   border-radius: 15px;
   font-size: 25px;
