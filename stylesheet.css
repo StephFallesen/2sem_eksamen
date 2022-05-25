@@ -313,22 +313,28 @@ label {
     background: rgba(81, 51, 51, 0.5);
     z-index: 10;
     pointer-events: auto;
-    display:none;
+    display: none;
     overflow-y:auto;
 }
 .modalbox >.dialog {
     max-width: 100%;
-    height: 100px;
+    height: 400px;
     position: relative;
     top: 15%;
     margin: 5% 10%;
-    padding: 5px 20px 13px 20px;
+    padding: 0px 20px 13px 20px;
     border-radius: 10px;
     background: #ffffff;
-    display: block;
+    display: flex;
     pointer-events: auto;
-}
+    flex-direction: column;
+    align-items: center;
 
+}
+#alertpic {
+  width: 200px;
+  margin-bottom: 10px;
+}
 
 .closebutton {
     background: var(--lyslilla);
