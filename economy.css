@@ -100,8 +100,13 @@
     border: none;
 }
 .total-input {
-    width: 220px;
-    font-size: 20px;
+    font-size: 25px;
+    background-color: var(--mørklilla);
+    color: var(--egg);
+    width: 200px;
+    border-radius: 20px;
+    height: 40px;
+    font-weight: bold;
 }
 
 .button-box {

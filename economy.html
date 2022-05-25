@@ -8,7 +8,7 @@
     <script src="economy.js" defer></script>
     <title>Economics</title>
 </head>
-<body>
+<body onload="myFunction()">
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
@@ -17,7 +17,7 @@
             </div>
             <form id="monthly" class="input-group">
                 <div class="social-icons">
-                    <input class="total-input" type="text" readonly value="$1.040">
+                 <div class="total-input"><span id="total-price">0</span></div>
                 </div>
                 <div class="eco-collect">
                     <div class="economics">
@@ -25,56 +25,56 @@
                         <input type="text" class="logo-title" value="Code Climate" readonly>
                         <input type="text" class="eco-cat" value="Development" readonly>
                         <input type="text" class="price-licens" value="$20" readonly>
-                        <input type="text" class="total-price" value="$280" readonly>
+                        <input type="text" id="input-total" class="total-price" value="280" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/creative-cloud.png" alt=""></div>
                         <input type="text" class="logo-title" value="Creative Cloud" readonly>
                         <input type="text" class="eco-cat" value="Design" readonly>
                         <input type="text" class="price-licens" value="$370" readonly>
-                        <input type="text" class="total-price" value="$740" readonly>
+                        <input type="text" id="input-total1" class="total-price" value="740" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/dmarcian.jpg" alt=""></div>
                         <input type="text" class="logo-title" value="Dmarcian" readonly>
                         <input type="text" class="eco-cat" value="Marketing" readonly>
                         <input type="text" class="price-licens" value="$24" readonly>
-                        <input type="text" class="total-price" value="$24" readonly>
+                        <input type="text" id="input-total2" class="total-price" value="24" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/browserstack.png" alt=""></div>
                         <input type="text" class="logo-title" value="Browserstack" readonly>
                         <input type="text" class="eco-cat" value="Design" readonly>
                         <input type="text" class="price-licens" value="$370" readonly>
-                        <input type="text" class="total-price" value="$740" readonly>
+                        <input type="text" id="input-total3" class="total-price" value="740" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/charles.png" alt=""></div>
                         <input type="text" class="logo-title" value="Charles Proxy (1)" readonly>
                         <input type="text" class="eco-cat" value="Marketing" readonly>
                         <input type="text" class="price-licens" value="$24" readonly>
-                        <input type="text" class="total-price" value="$24" readonly>
+                        <input type="text" id="input-total4" class="total-price" value="24" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/charles.png" alt=""></div>
                         <input type="text" class="logo-title" value="Charles Proxy (2)" readonly>
                         <input type="text" class="eco-cat" value="Marketing" readonly>
                         <input type="text" class="price-licens" value="$24" readonly>
-                        <input type="text" class="total-price" value="$24" readonly>
+                        <input type="text" id="input-total5" class="total-price" value="24" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/github.png" alt=""></div>
                         <input type="text" class="logo-title" value="Github" readonly>
                         <input type="text" class="eco-cat" value="Development" readonly>
                         <input type="text" class="price-licens" value="$20" readonly>
-                        <input type="text" class="total-price" value="$280" readonly>
+                        <input type="text" id="input-total6" class="total-price" value="280" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/netlify.png" alt=""></div>
                         <input type="text" class="logo-title" value="Netlify" readonly>
                         <input type="text" class="eco-cat" value="Marketing" readonly>
                         <input type="text" class="price-licens" value="$24" readonly>
-                        <input type="text" class="total-price" value="$24" readonly>
+                        <input type="text" id="input-total7" class="total-price" value="24" readonly>
                     </div>
                     </div>
             </form>
@@ -143,6 +143,5 @@
                     
             </form>
         </div>
-    <script src="economy.js"></script>
 </body>
 </html>
