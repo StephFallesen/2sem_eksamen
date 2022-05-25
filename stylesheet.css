@@ -114,7 +114,10 @@ transition: 0.5s;
 }
 .gridsection {
   display: grid;
-  grid-template-rows: 4fr 4fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas:
+  "pic"
+  "tabel";
 }
 
 .programikon {
@@ -237,7 +240,7 @@ footer p {
 }
 
 .col-75 {
-  flex: 75%;
+  flex: 80%;
 }
 
 .col-25, .col-50, .col-75 {
@@ -245,9 +248,8 @@ footer p {
 }
 
 .container {
-  background-color: var(--gulhvid);
+  background-color: var(--egg);
   padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
   border-radius: 15px;
 }
 

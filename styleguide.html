@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="da" dir="ltr">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
-  <script src="script.js" defer></script>
+  <script src="javascript/style.js" defer></script>
   <title>Styleguide</title>
 </head>
 
 <body>
-
+  <button id="ham" class="openbtn" onclick="openNav()">&#9776;</button>
   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#typografi">Typografi</a>
     <a href="#farver">Farver</a>
     <a href="#knapper">Knapper</a>

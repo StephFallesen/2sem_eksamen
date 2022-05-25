@@ -17,9 +17,10 @@ document.getElementById("Overly").addEventListener("click", function(){
 
 })	;
 document.getElementById("close").addEventListener("click", function(){
-   let e =document.getElementsByClassName("modalbox");
- e[0].style.display= 'none';
-});
+     let e =document.getElementsByClassName("modalbox");
+     e[0].style.display= 'none';
+  });
+}
 
 
 //Dropdown Category
