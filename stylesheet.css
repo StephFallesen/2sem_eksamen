@@ -213,8 +213,12 @@ footer p {
 /* Add sub */
 .newsub {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 20px;
+}
+.newsub h1{
+  text-align: center;
 }
 
 .row {
