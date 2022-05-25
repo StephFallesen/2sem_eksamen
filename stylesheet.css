@@ -1035,6 +1035,9 @@ a {
 }
 /*  // Needed for filters */
 
+.lictitle{
+  font-size: 30px;
+}
 .license-list{
   display: flex;
   flex-direction: column;
@@ -1050,6 +1053,7 @@ a {
   border-radius: 20px;
   text-align: center;
   margin: 0;
+  font-size: 18px;
 }
 
 .licategories .all{
@@ -1096,16 +1100,16 @@ a {
 }
 
 .lilist{
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 20px;
+  display: grid;
+  row-gap: 10px;
   padding: 10px;
-  width: 95%;
+  width: 80%;
 }
 .sublic{
   display: grid;
   grid-template-columns: 15% 50% 35%;
-  width: 100%;
+  width: 95%;
   padding: 5px 20px;
   border-radius: 50px;
   border-style: none;
@@ -1113,6 +1117,7 @@ a {
 }
 .sublic p {
   padding-left: 10px;
+  font-size: 15px;
 }
 
 .sub-cat{
@@ -1134,17 +1139,46 @@ a {
     border-radius: 50px;
 }
 
-@media screen and (min-width: 490px){
-  .license-list{
-    margin: 10px;
+@media screen and (min-width: 425px){
+  .licategories p{
+    font-size:20px;
   }
-  .logo-sub img {
-    width: 40px;
-    margin-top: 15px;
-    border-radius: 50px;
+
+  .sublic{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .lilist p{
+    font-size: 20px;
   }
 }
-
+@media screen and (min-width: 768px){
+  .lictitle{
+    font-size: 40px;
+  }
+  .sublic{
+    width:115%;
+  }
+}
+@media screen and (min-width: 768px){
+  .licategories p{
+    font-size: 25px;
+  }
+  .lilist p{
+    font-size: 25px;
+  }
+  .des{
+    width: 100px;
+  }
+  .dev{
+    width:150px;
+  }
+  .mar{
+    width: 120px;
+  }
+}
+.logo-sub img{
+  width:60px;}
 
 
 
