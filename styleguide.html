@@ -5,62 +5,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
-  <script src="javascript/style.js" defer></script>
-  <title>Styleguide</title>
+  <title>SubScripto Styleguide</title>
 </head>
 
 <body>
   <div id="mySidenav" class="sidenav">
+    <a href="#logo">Logo</a>
     <a href="#typografi">Typografi</a>
     <a href="#farver">Farver</a>
     <a href="#knapper">Knapper</a>
-    <a href="#animationer">Animationer</a>
-    <a href="#billedstr">Billedestørrelser</a>
     <a href="#txtb">Tekstbokse</a>
   </div>
 
   <div class="styleguideMain">
+    <h1>SubScripto Styleguide</h1>
+
+    <!-- Logo -->
+<div class="logo-style">
+  <img src="billeder/logolilla.svg" alt="">
+  <img src="billeder/logopink.svg" alt="">
+</div>
 
     <!-- Typografi -->
     <div id="typografi">
       <h1 id="sgh1">Typografi</h1>
       <h1>Hovedoverskrift</h1>
-      <p>Striftstørrelse: 60px <br>Farve: Root: var(--sort) og HEX: #393939</p>
+      <p>Striftstørrelse: 40px <br>Font-weight: 500 <br>Farve: Root: var(--mørklilla) og HEX: #36244D </p>
       <h1 id="stephBaggrund">Dette er et eksempel på en hovedoverskrift, <br>den bruges som overskrift til afsnit.</h1>
       <br>
       <h2>Underoverskrift</h2>
-      <p>Striftstørrelse: 24px <br>Farve: Root: var(--rød) og HEX: #c35146</p>
+      <p>Striftstørrelse: 30px <br>Font-weight: 400 <br>Farve: Root: var(--mørklilla) og HEX: #36244D </p>
       <h2 id="stephBaggrund">Dette er et eksempel på en underoverskrift, <br>den bruges som underoverskrift i et afsnit.</h2>
       <br>
       <h3>Mindre Underoverskrift</h3>
-      <p>Striftstørrelse: 22px <br>Farve: Root: var(--sort) og HEX: #393939 <br>Font-weigth: 500</p>
+      <p>Striftstørrelse: 25px <br>Font-weight: 300 <br>Farve: Root: var(--mørklilla) og HEX: #36244D </p>
       <h3 id="stephBaggrund">Dette er et eksempel på lille underoverskrift, der bruges som en mindre underoverskrift.</h3><br>
       <p>Brødtekst</p>
-      <p>Striftstørrelse: 18px <br>Farve: Root: var(--sort) og HEX: #393939</p>
+      <p>Striftstørrelse: 20px <br>Font-weight: 400 <br>Farve: Root: var(--mørklilla) og HEX: #36244D </p>
       <p id="stephBaggrund">Dette er et eksempel på brødtekst, der bruges som generel tekst i afsnit.</p><br>
     </div>
 
     <!-- Farver -->
+    <div id="farver"></div>
     <h1 id="sgh1">Farver</h1>
     <p>Disse farver er vores farvepallette til hjemmesiden og til generelt content.</p><br><br>
     <div id="farver">
-
       <div class="farve1">
       <p>HEX: #F29E99</p>
       <p>I kodningen skrives der: var(--mørkpink); </p>
-      <p>Bruges som skriftfarve på underoverskrifter.<br></p><br>
+      <p>Bruges til kategorien for Design.<br>Ligeledes bruge det på sekundær elementer.</p><br>
       </div>
 
       <div class="farve2">
       <p>HEX: #F2D7CA</p>
       <p>I kodningen skrives der: var(--pink);</p>
-      <p>Bruges til knappernes baggrundsfarve.</p><br>
+      <p>Bruges til diverse baggrundsfarver på elementer som består af rækker.</p><br>
       </div>
 
       <div class="farve3">
       <p>HEX: #FCFAF0</p>
       <p>I kodningen skrives der: var(--gulhvid);</p>
-      <p>Bruges i navigation og footer som baggrundsfarve.</p><br>
+      <p>Bruges i kategorien All samt mindre </p><br>
       </div>
 
       <div class="farve4">
@@ -72,37 +77,111 @@
       <div class="farve5">
       <p>HEX: #36244D</p>
       <p>I kodningen skrives der: var(--mørklilla);</p>
-      <p>Bruges som baggrundsfarve på alle tekstbokse.</p><br>
+      <p>Bruges som baggrundsfarve på alt tekst. <br> Dette er navigationens og
+        footerens <br>baggrundsfarve. Dertil bruges den til total pris på abonnementer.</p><br>
       </div>
 
       <div class="farve6">
       <p>HEX: #E0F9F0</p>
       <p>I kodningen skrives der: var(--lysgrøn);</p>
-      <p>Bruges som baggrundsfarve på alle tekstbokse.</p><br>
+      <p>Bruges som farve på kategorien Management. <br>Dertil bruges den på Economy siden som baggrundsfarve til rækkerne. </p>
       </div>
 
       <div class="farve7">
       <p>HEX: #CBEBDB</p>
       <p>I kodningen skrives der: var(--mørkgrøn);</p>
-      <p>Bruges som baggrundsfarve på alle tekstbokse.</p><br>
+      <p>Bruges som farve på kategorien Development. </p>
       </div>
-
     </div>
 
+    <!-- KNAPPER -->
+    <div id="knapper"></div>
+    <br><h1>Knapper</h1>
+    <button class="btn" type="button">DO IT NOW</button>
+    <p>Bruges som opdateringsknap til vedligeholdelse af programmer.<br>
+    Bruges på profil siden.</p>
+    <textarea name="HTML" rows="8" cols="80">
+        <button class="btn" type="button">DO IT NOW</button>
+    </textarea>
+
+    <div class="btn_design">Designer</div>
+    <p>Bruges til at vise hvilken kategori en medarbejder tilhører.</p>
+    <textarea name="name" rows="8" cols="80">
+      <div class="btn_design">Designer</div>
+    </textarea>
+<br>
+    <button class="logout" type="button">LOG OUT</button>
+    <p>Log ud knap.</p>
+    <textarea name="name" rows="8" cols="80">
+      <button class="logout" type="button">LOG OUT</button>
+    </textarea>
+
+    <button type="button" class="toggle-btn" onclick="monthly()">Monthly</button>
+    <button type="button" class="toggle-btn" onclick="yearly()">Yearly</button>
+    <p>Bruges til at skifte mellem månedlige og årlige udgifter på abonnementer på økonomi siden.</p>
+    <textarea name="name" rows="8" cols="80">
+      <button type="button" class="toggle-btn" onclick="monthly()">Monthly</button>
+
+
+      <button type="button" class="toggle-btn" onclick="yearly()">Yearly</button>
+    </textarea>
+
+
+    <div class="licategories">
+      <span class="filter" data-filter="all"><p class="all">All</p></span>
+      <span class="filter" data-filter="des"><p class="des">Design</p></span>
+      <span class="filter" data-filter="dev"><p class="dev">Development</p></span>
+      <span class="filter" data-filter="mar"><p class="mar">Marketing</p></span>
+    </div>
+    <p>Bruges til at skifte mellem kategorier på licens oversigt siden.</p>
+    <textarea name="name" rows="8" cols="80">
+      <div class="licategories">
+        <span class="filter" data-filter="all"><p class="all">All</p></span>
+        <span class="filter" data-filter="des"><p class="des">Design</p></span>
+        <span class="filter" data-filter="dev"><p class="dev">Development</p></span>
+        <span class="filter" data-filter="mar"><p class="mar">Marketing</p></span>
+      </div>
+    </textarea>
+
+    <div class="container1">
+      <input type="button" value="Add subscription" id="Overly" class="overly" />
+    </div>
+    <p>Add subscription knap.</p>
+    <textarea name="name" rows="8" cols="80">
+      <div class="container1">
+        <input type="button" value="Add subscription" id="Overly" class="overly" />
+      </div>
+    </textarea>
+
+
     <!-- BOKSE -->
-    <br>
-    <br>
+    <div id="txtb"></div>
     <h1 id="sgh1">Bokse</h1>
     <h2>Header boks:</h2>
     <div class="spaces-header">
       <h1>Velkommen, Frederik Frederiksen</h1>
-      <button class="btn light mr-10" type="button">KNAP</button>
+      <button class="btn" type="button">KNAP</button>
     </div>
+    <p>Bruges på profil siden.</p>
+    <textarea name="name" rows="8" cols="80">
+      <button class="btn" type="button">KNAP</button>
+    </textarea>
+
     <h2>Tekstbokse:</h2>
     <div class="boxes">
+
       <div class="boxgrøn"></div>
+      <p>Grøn box.</p>
+      <textarea name="name" rows="8" cols="80"><div class="boxgrøn"></div></textarea>
+
       <div class="boxlilla"></div>
+      <p>Lilla box</p>
+      <textarea name="name" rows="8" cols="80"><div class="boxlilla"></div></textarea>
+
       <div class="boxpink"></div>
+      <p>Pink box</p>
+      <textarea name="name" rows="8" cols="80"><div class="boxgrøn"></div></textarea>
+
     </div>
   </div>
 </body>

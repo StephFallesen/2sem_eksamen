@@ -1319,11 +1319,6 @@ a {
   padding-top: 20px;
 }
 
-/* Page content */
-.main {
-  margin-left: 200px;
-  /* Same as the width of the sidenav */
-}
 
 /* The navigation menu links */
 .sidenav a {
@@ -1342,7 +1337,7 @@ a {
 }
 
 .styleguideMain {
-  margin-left: 150px;
+  margin-left: 30%;
   margin-bottom: 70px;
 }
 
@@ -1368,91 +1363,91 @@ a {
 }
 
 .farve1 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
   background-color: var(--mørkpink);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
   width: 300px;
-  height: 150px;
+  height: 300px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
 
 .farve2 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
   background-color: var(--pink);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
   width: 300px;
-  height: 150px;
+  height: 300px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
 
 .farve3 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
   background-color: var(--gulhvid);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
   width: 300px;
-  height: 150px;
+  height: 300px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
 
 .farve4 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
   background-color: var(--lyslilla);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
   width: 300px;
-  height: 150px;
+  height: 300px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
 
 .farve5 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
   background-color: var(--mørklilla);
-  color: #FFFFFF;
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
   width: 300px;
-  height: 150px;
+  height: 300px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
+.farve5 p {color: white;}
 .farve6 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
   background-color: var(--lysgrøn);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
   width: 300px;
-  height: 150px;
+  height: 300px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
 .farve7 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
   background-color: var(--mørkgrøn);
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
   width: 300px;
-  height: 150px;
+  height: 300px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1462,14 +1457,13 @@ a {
 }
 
 .styleguideMain textarea {
-  width: 45%;
+  width: 60%;
   height: 100px;
-}
-
-.styleguideMain .newsletter-box {
+  display: block;
+  margin-bottom: 75px;
+  border-radius: 20px;
+  background-color: #FAFAFA;
   padding: 20px;
-  width: 70%;
-  margin: 0;
 }
 
 .styleguideMain .stephLanding h2 {
@@ -1526,7 +1520,7 @@ change the style of the sidenav (less padding and a smaller font size) */
   height: 100%;
   box-sizing: border-box;
   justify-content: space-between;
-  background-color: var(--mediumpink);
+  background-color: var(--pink);
   border-radius: 40px;
   height: 304px;
   width: 288px;
@@ -1534,6 +1528,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 .boxes {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .spaces-header {
   display: flex;
@@ -1568,5 +1563,18 @@ change the style of the sidenav (less padding and a smaller font size) */
   cursor: pointer;
   text-decoration: none;
   margin-right: 10px;
+}
+.logo-style{
+  width:60%;
+  background-color: #808080;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  justify-content:center;
 
+}
+.logo-style img {
+  width: 250px;
+  padding-right: 50px;
 }
