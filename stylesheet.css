@@ -254,13 +254,15 @@ footer p {
   border-radius: 15px;
 }
 
-input[type=text] {
+#fname, #adr, #des, #cname, #ccnum, #expmonth, #expyear, #cvv, #email {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 15px;
 }
+
+
 select {
   width: 105%;
   margin-bottom: 20px;
@@ -1543,7 +1545,7 @@ change the style of the sidenav (less padding and a smaller font size) */
   margin-right: 10px;
 }
 .logout {
-  margin-top: 150px;
+  margin-top: 70px;
   display: flex;
   border: 0;
   padding: 16px 40px;
