@@ -31,6 +31,11 @@ h3 { font-weight: 300; font-size: 25px; color: var(--mørklilla);}
 .stephmain {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
 }
 
 /* Nav */
@@ -40,7 +45,6 @@ flex-grow: 1;
 flex-direction: column;
 justify-content: center;
 background-color: var(--mørklilla);
-width: 100px;
 height: 101vh;
 position: fixed;
 z-index: 5;
@@ -49,6 +53,7 @@ left: 0;
 overflow-x: hidden;
 align-items: center;
 transition: 0.5s;
+width: 0;
 }
 #subscriptoNav a {
   text-align: center;
@@ -449,6 +454,7 @@ a {
   color: var(--egg);
   text-decoration: none;
   margin-right: 10px;
+  grid-area: s;
 }
 .btn_design {
   display: inline-block;
@@ -460,6 +466,12 @@ a {
   color: var(--egg);
   text-decoration: none;
   margin-right: 10px;
+  grid-area: d;
+}
+.caroknapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "d s"
 }
 
 .totalbtn {
