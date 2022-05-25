@@ -8,3 +8,11 @@ function closeNav() {
   document.getElementById("subscriptoNav").style.width = "0";
   document.getElementById("hamburger").style.marginLeft= "20px";
 }
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+} 
