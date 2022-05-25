@@ -22,65 +22,65 @@
     <a href="#" class="navicon"><img src="iconer/info.png" alt=""></a>
     <a href="#" class="navicon"><img src="iconer/cash.png" alt=""></a>
   </nav>
+  <div class="newsub">
+    <h1>Add new licens or subscription</h1>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-50">
+                <h3>Licens / Subscription</h3>
+                <label for="fname">Name Of License / Subscription</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter name">
+                <label for="email"> Email</label>
+                <input type="text" id="email" name="email" placeholder="xx@abtion.com">
+                <label>Password Vault Link</label>
+                <input type="text" id="adr" name="address" placeholder="Insert link">
+                <label>Category</label>
+                <select id="cte"></select>
+                <label>Description Of Use</label>
+                <input id="des" type="text" name="cvv" placeholder="Enter description">
+              </div>
 
-<div class="newsub">
-  <div class="row">
-    <div class="col-75">
-      <div class="container">
-        <form action="/action_page.php">
-          <div class="row">
-            <div class="col-50">
-              <h3>Licens / Subscription</h3>
-              <label for="fname">Name Of License / Subscription</label>
-              <input type="text" id="fname" name="firstname" placeholder="Enter name">
-              <label for="email"> Email</label>
-              <input type="text" id="email" name="email" placeholder="xx@abtion.com">
-              <label>Password Vault Link</label>
-              <input type="text" id="adr" name="address" placeholder="Insert link">
-              <label>Category</label>
-              <select id="cte"></select>
-              <label>Description Of Use</label>
-              <input id="des" type="text" name="cvv" placeholder="Enter description">
-            </div>
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label>Payment Frequency</label>
+                <select id="pay"></select>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
 
-            <div class="col-50">
-              <h3>Payment</h3>
-              <label>Payment Frequency</label>
-              <select id="pay"></select>
-              <label for="cname">Name on Card</label>
-              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-              <label for="ccnum">Credit card number</label>
-              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-              <label for="expmonth">Exp Month</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="September">
-
-              <div class="row">
-                <div class="col-50">
-                  <label for="expyear">Exp Year</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="2023">
-                </div>
-                <div class="col-50">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2023">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="container1">
-            <input type="button" value="Add subscription" id="Overly" class="overly" />
-          </div>
-
-          <div id="ogrooModel" class="modalbox ogroobox">
-            <div class="dialog">
-              <p>Your subscription request has been sent to a manager. Please be patient.</p>
-              <button title="Close" onClick="overlay()" class="closebutton" id="close">close</button>
+            <div class="container1">
+              <input type="button" value="Add subscription" id="Overly" class="overly" />
             </div>
-          </div>
-        </form>
+
+            <div id="ogrooModel" class="modalbox ogroobox">
+              <div class="dialog">
+                <p>Your subscription request has been sent to a manager. Please be patient.</p>
+                <button title="Close" onClick="overlay()" class="closebutton" id="close">close</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <footer>
     <p>All rigths reserved by SubScripto 2022</p>
   </footer>
