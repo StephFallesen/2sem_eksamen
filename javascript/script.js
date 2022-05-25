@@ -9,6 +9,30 @@ function closeNav() {
   document.getElementById("hamburger").style.marginLeft= "20px";
 }
 
+//Dropdown Category
+function dropDown() {
+  document.getElementById('cte').classList.toggle("show")
+}
+let categoryArray = new Array("Category", "Development", "Design", "Management", "Marketing");
+
+  let dropdown = document.getElementById('cte');
+
+  for (let i = 0; i < categoryArray.length; ++i) {
+    dropdown[dropdown.length] = new Option(categoryArray[i])
+  }
+
+  //Dropdown Payment
+  function moneyFunc() {
+    document.getElementById('pay').classList.toggle("show")
+  }
+  let paymentArray = new Array("Paymentplan", "Monthly", "Yearly");
+
+    let money = document.getElementById('pay');
+
+    for (let i = 0; i < paymentArray.length; ++i) {
+      money[money.length] = new Option(paymentArray[i])
+    }
+
 
 // Countdown
 // Set the date we're counting down to
@@ -29,13 +53,13 @@ let x = setInterval(function() {
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="count"
-  document.getElementById("count").innerHTML = days + " DAYS : " + hours + " HOURS : "
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + " DAYS : " + hours + " HOURS : "
   + minutes + " MINUTES : " + seconds + " SEKUNDS";
 
   // Kontrolstruktur hvis countdown er nået den ønskede dato:
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("count").innerHTML = "UPDATE COMPLETED";
+    document.getElementById("demo").innerHTML = "UPDATE COMPLETED";
   }
 }, 1000);
