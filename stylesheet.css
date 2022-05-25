@@ -216,9 +216,10 @@ footer p {
 /* Add sub */
 .newsub {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
+  align-content: space-around;
+  align-items: center;
 }
 .newsub h1{
   text-align: center;
@@ -648,7 +649,7 @@ a {
   }
 
 <<<<<<< Updated upstream
-  
+
 =======
   #overlay {
     position: fixed; /* Sit on top of the page content */
