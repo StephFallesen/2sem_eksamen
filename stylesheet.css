@@ -80,7 +80,7 @@ transition: 0.5s;
 
 .navicon img {
   max-height: 25px;
-  filter: invert();
+  filter: invert(1);
 }
 
 /* Landing */
@@ -97,7 +97,7 @@ transition: 0.5s;
 .manpic {
   max-width: 90%;
   display: grid;
-  grid-area: 'pic';
+  grid-area: pic;
 }
 
 
@@ -110,11 +110,11 @@ transition: 0.5s;
 }
 #subssection {
   display: grid;
-  grid-area: 'tabel';
+  grid-area: tabel;
 }
 .gridsection {
   display: grid;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 4fr 4fr;
 }
 
 .programikon {
