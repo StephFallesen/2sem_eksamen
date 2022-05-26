@@ -1,15 +1,15 @@
-let x = document.getElementById("monthly");
+let t = document.getElementById("monthly");
 let y = document.getElementById("yearly");
 let btn = document.getElementById("btn");
 
 function yearly() {
-    x.style.left = "-1200px";
+    t.style.left = "-1200px";
     y.style.left = "30px";
     btn.style.left = "110px";
 }
 
 function monthly() {
-    x.style.left = "30px";
+    t.style.left = "30px";
     y.style.left = "1200px";
     btn.style.left = "0";
 }

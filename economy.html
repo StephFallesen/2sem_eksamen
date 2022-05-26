@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="economy.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="javascript/script.js" defer></script>
+    <script src="javascript/script.js"></script>
     <script src="javascript/economy.js" defer></script>
     <title>Economics</title>
 </head>
-<body>
+<body onload="myFunction()", onload="myFunction1()">
 
 
     <button id="hamburger" class="openbtn" onclick="openNav()">&#9776;</button>
@@ -47,7 +47,7 @@
             </div>
             <form id="monthly" class="input-group">
                 <div class="social-icons">
-                 <div class="total-input" ><span id="total-price">0</span></div>
+                 <div class="total-input"><span id="total-price">0</span></div>
                 </div>
                 <div class="eco-collect">
                     <div class="economics">
@@ -55,7 +55,7 @@
                         <input type="text" class="logo-title" value="Code Climate" readonly>
                         <input type="text" class="eco-cat" value="Development" readonly>
                         <input type="text" class="price-licens" value="$20" readonly>
-                        <input type="text" id="input-total" class="total-price" value="280" readonly onload="myFunction()">
+                        <input type="text" id="input-total" class="total-price" value="280" readonly >
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/creative-cloud.png" alt=""></div>
@@ -106,7 +106,7 @@
                         <input type="text" class="price-licens" value="$24" readonly>
                         <input type="text" id="input-total7" class="total-price" value="24" readonly>
                     </div>
-                    </div>
+                </div>
             </form>
             <form id="yearly" class="input-group">
                 <div class="social-icons">
@@ -118,14 +118,14 @@
                         <input type="text" class="logo-title" value="Code Climate" readonly>
                         <input type="text" class="eco-cat" value="Development" readonly>
                         <input type="text" class="price-licens" value="$20" readonly>
-                        <input type="text" class="total-price" value="400" readonly>
+                        <input type="text" id="in-total" class="total-price" value="400" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/creative-cloud.png" alt=""></div>
                         <input type="text" class="logo-title" value="Creative Cloud" readonly>
                         <input type="text" class="eco-cat" value="Design" readonly>
                         <input type="text" class="price-licens" value="$370" readonly>
-                        <input type="text" id="in-total1" class="total-price" value="8.880" readonly>
+                        <input type="text" id="in-total1" class="total-price" value="8880" readonly>
                     </div>
                     <div class="economics">
                         <div class="logo-names"><img src="billeder/dmarcian.jpg" alt=""></div>
