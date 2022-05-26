@@ -25,10 +25,17 @@ document.getElementById("close").addEventListener("click", function(){
 function dropDown() {
   document.getElementById('cte').classList.toggle("show")
 }
+
+//ARRAY FORKLARING!
+//Et array er en ordered liste af værdier. Disse værdier er elementer.
+// Et array starter med at tælle fra 0, 1, 2, 3 mm.
 let categoryArray = new Array("Category", "Development", "Design", "Management", "Marketing");
 
   let dropdown = document.getElementById('cte');
 
+
+//LOOP FORKLARINNG
+//Dette er et for - loop hvilket ses på definition FOR. 
   for (let i = 0; i < categoryArray.length; ++i) {
     dropdown[dropdown.length] = new Option(categoryArray[i])
   }

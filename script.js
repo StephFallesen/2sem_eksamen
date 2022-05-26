@@ -1,4 +1,10 @@
 //menu
+
+//FUNKTIONS FORKLARING - Function by declaretation
+//funktionen defineres ved brug af et function keyword
+//dernæst funktionsnavnet og afsluttes med ().
+//Når man klikker knappen fra HTML'en sker der et event (onclick) og vi får
+// ID'et subscriptoNav, hviket bliver styled til at fylde 100% af siden.
 function openNav() {
   document.getElementById("subscriptoNav").style.width = "100%";
   document.getElementById("hamburger").style.marginLeft = "0px";
@@ -11,15 +17,27 @@ function closeNav() {
 
 // Countdown
 // Set the date we're counting down to
+
+//VARIABEL FORKLARINNG - Function by expression:
+//let giver mulighed for at erklære variabler, der er begrænset
+//til omfanget af et scope eller et udtryk, som det bruges på,
+//i modsætning til nøgleordet var, som erklærer en variabel globalt
+//eller lokalt til en hel funktion uanset scopet.
+//Let er derfor block scooped. (block er tuborg klammer)
+// Vi bruger den fordi det er den nyeste metode at deklarede funktioner.
+
+//Derfor erklæres variablen med let og kaldes countDownDate, hvorefter
+//datoen skrives og get time henter den nuværende tid.
 let countDownDate = new Date("June 31, 2022 12:00:00").getTime();
 
-// Update the count down every 1 second
+// opdaterer countdown for hvert sekund.
 let x = setInterval(function() {
 
-  // Get today's date and time
+  // Skaber er variabel og henter dags dato + tid.
   let now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+  // finder forskellen mellem datoen der tælles ned til og
+  //fratrækker dags dato og tid.
   let distance = countDownDate - now;
 
   // Time calculations for days, hours, minutes and seconds
