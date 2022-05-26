@@ -1565,6 +1565,7 @@ change the style of the sidenav (less padding and a smaller font size) */
   margin-right: 10px;
 }
 .logo-style{
+  margin-top: 70px;
   width:60%;
   background-color: #808080;
   border-radius: 20px;
