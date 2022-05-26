@@ -171,7 +171,7 @@ footer p {
   .boksikon {
     width: 400px;
   }
-  #demo {
+  #count {
     width: 400px;
   }
   .manpic {
@@ -183,7 +183,7 @@ footer p {
   .boksikon {
     width: 550px;
   }
-  #demo {
+  #count {
     width: 550px;
   }
   .manpic {
@@ -192,29 +192,24 @@ footer p {
 }
 @media screen and (min-width: 1000px) {
   .manpic {
-    max-width: 60%;
+    max-width: 40%;
   }
-  .gridsection {
-    grid-template-columns: 2fr 2fr;
-    grid-template-areas: "tabel pic";
-    grid-template-rows: 1fr;
-   }
   .boksikon {
-    width: 350px;
+    width: 650px;
   }
   .openbtn {
     visibility: inherit;
   }
-  #demo {
-    width: 790px;
+  #count {
+    width: 650px;
   }
 }
 @media screen and (min-width: 1150px) {
   .boksikon {
-    width: 450px;
+    width: 650px;
   }
-  #demo {
-    width: 917px;
+  #count {
+    width: 650px;
   }
 }
 
