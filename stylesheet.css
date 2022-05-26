@@ -442,10 +442,10 @@ a {
 .seats_design {
   display: inline-block;
   border: 0;
+  font-size: 20px;
   padding: 16px 40px;
   background: var(--mørkpink);
   border-radius: 100px;
-  font-size: 16px;
   color: var(--egg);
   text-decoration: none;
   margin-right: 10px;
@@ -453,15 +453,28 @@ a {
 }
 .btn_design {
   display: inline-block;
+  font-size: 20px;
   border: 0;
   padding: 16px 40px;
   background: var(--mørkpink);
   border-radius: 100px;
-  font-size: 16px;
   color: var(--egg);
   text-decoration: none;
   margin-right: 10px;
   grid-area: d;
+}
+#design {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  border: 0;
+  padding: 16px 30px;
+  background: var(--mørkpink);
+  border-radius: 100px;
+  color: var(--egg);
+  text-decoration: none;
+  grid-area: d;
+  margin-bottom: 30px;
 }
 .caroknapper {
   display: grid;
