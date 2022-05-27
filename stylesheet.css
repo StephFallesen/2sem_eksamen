@@ -27,7 +27,7 @@ h3 { font-weight: 300; font-size: 25px; color: var(--mørklilla);}
 
 /* Logo */
 .lilla {
-  width: 400px;
+  width: 300px;
   display: block;
 margin-left: auto;
 margin-right: auto;
@@ -1106,7 +1106,316 @@ a {
 }
 
 
+/*  economy */
 
+#monthly {
+  left: 30px;
+}
+#yearly {
+  left: 1200px;
+}
+
+.form-box {
+  width: 380px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.monthly {
+  background-color: var(--mørkgrøn);
+  width: 200px;
+  border-radius: 50px;
+}
+
+.yearly {
+  background-color: var(--mørkgrøn);
+  width: 200px;
+  border-radius: 50px;
+}
+
+.eco-collect {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.economics {
+  background-color: var(--lysgrøn);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.economics .logo-names img {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.logo-title {
+  background-color: var(--lysgrøn);
+  border-style:none;
+  width: 150px;
+}
+
+.price-licens {
+  display: none;
+}
+
+.eco-cat {
+  display: none;
+}
+
+.total-price {
+  background-color: var(--lysgrøn);
+  text-align: end;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 70px;
+}
+
+.price-total {
+  color: var(--egg);
+  background-color: var(--mørklilla);
+  border: none;
+}
+.total-input {
+  font-size: 25px;
+  background-color: var(--mørklilla);
+  color: var(--egg);
+  width: 200px;
+  border-radius: 20px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 10px 0 var(--mørklilla);
+  border-radius: 30px;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: var(--mørkgrøn);
+  border-radius: 30px;
+  transition: .5s;
+}
+.social-icons {
+  margin-bottom: 30px;
+  margin-left: 20%;
+  text-align: center;
+}
+.social-icons input {
+  padding: 10px 0;
+  border-style: none;
+  border-radius: 20px;
+  background-color: var(--mørklilla);
+  color: var(--egg);
+  text-align: center;
+}
+.input-group {
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+
+.bar {
+  display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 490px) {
+  .form-box {
+      width: 680px;
+      height: 1100px;
+      position: relative;
+      margin: 6% auto;
+      padding: 5px;
+      overflow: hidden;
+  }
+
+  .social-icons {
+      margin-bottom: 30px;
+      margin-left: 75%;
+  }
+  .social-icons input {
+      padding: 10px 0;
+      border-style: none;
+      border-radius: 20px;
+      text-align: center;
+  }
+  .eco-collect {
+    display: grid;
+    grid-gap: 10px;
+    width: 500px;
+  }
+  .economics .logo-names img {
+      width: 60px;
+      border-radius: 50px;
+  }
+  .economics {
+    background-color: var(--lysgrøn);
+    display: grid;
+    grid-template-columns: 15% 30% 25% 20% 10%;
+    padding: 20px;
+    border-radius: 50px;
+    border-style: none;
+  }
+  .price-licens {
+      display: block;
+      text-align: end;
+      background-color: var(--lysgrøn);
+      border-style: none;
+      width: 50px;
+      font-size: 15px;
+      outline:none;
+  }
+  .total-price {
+      background-color: var(--lysgrøn);
+      text-align: end;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      width: 50px;
+  }
+  
+  .eco-cat {
+    display:block;
+    background-color: var(--lysgrøn);
+    border:none;
+    font-size: 15px;
+    width: 150px;
+    outline:none;
+  }
+
+  .economics {
+    width: 600px;
+  }
+  .logo-title {
+      font-size: 15px;
+      outline:none;
+  }
+  
+}
+
+
+@media screen and (min-width: 800px) {
+  .form-box {
+      width: 1100px;
+      height: 1550px;
+      position: relative;
+      margin: 6% auto;
+      padding: 5px;
+      overflow: hidden;
+  }
+  .social-icons {
+      margin-bottom: 30px;
+      margin-left: 140%;
+  }
+  .social-icons input {
+      padding: 30px 0;
+      border-style: none;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 30px;
+      width: 400px;
+  }
+  .eco-collect {
+    display: grid;
+    grid-gap: 10px;
+  }
+  .economics {
+    background-color: var(--lysgrøn);
+    display: grid;
+    grid-template-columns: 15% 30% 25% 20% 10%;
+    padding: 20px;
+    border-radius: 50px;
+    border-style: none;
+    width: 950px;
+  }
+  .logo-names {
+    display: grid;
+    grid-template-columns: 30% 100%;
+  }
+  .logo-title {
+      font-size: 20px;
+  }
+  .price-licens {
+      font-size: 20px;
+  }
+  .total-price {
+      font-size: 20px;
+      font-weight: bold;
+  }
+  
+  .eco-cat {
+    font-size: 20px;
+  }
+  .button-box {
+      width: 220px;
+      margin-left: 38%;
+      position: relative;
+      box-shadow: 0 0 10px 0 var(--mørklilla);
+      border-radius: 30px;
+  }
+  .toggle-btn {
+      padding: 20px 30px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      position: relative;
+      font-size: 14px;
+  }
+  #btn {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 110px;
+      height: 100%;
+      background: var(--mørkgrøn);
+      border-radius: 30px;
+      transition: .5s;
+  }
+  .total-input  {
+      padding: 10px;
+  }
+  .bar {
+      width: 900px;
+      display: block;
+      margin-top: 5%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .lilla {
+    width: 400px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+}
 
 
 
