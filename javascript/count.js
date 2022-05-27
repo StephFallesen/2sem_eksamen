@@ -1,14 +1,27 @@
+
 // Countdown
 // Set the date we're counting down to
+
+//VARIABEL FORKLARINNG - Function by expression:
+//let giver mulighed for at erklære variabler, der er begrænset
+//til omfanget af et scope eller et udtryk, som det bruges på,
+//i modsætning til nøgleordet var, som erklærer en variabel globalt
+//eller lokalt til en hel funktion uanset scopet.
+//Let er derfor block scooped. (block er tuborg klammer)
+// Vi bruger den fordi det er den nyeste metode at deklarede funktioner.
+
+//Derfor erklæres variablen med let og kaldes countDownDate, hvorefter
+//datoen skrives og get time henter den nuværende tid.
 let countDownDate = new Date("June 31, 2022 12:00:00").getTime();
 
-// Update the count down every 1 second
+// opdaterer countdown for hvert sekund.
 let x = setInterval(function() {
 
-  // Get today's date and time
+  // Skaber er variabel og henter dags dato + tid.
   let now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+  // finder forskellen mellem datoen der tælles ned til og
+  //fratrækker dags dato og tid.
   let distance = countDownDate - now;
 
   // Time calculations for days, hours, minutes and seconds
@@ -27,8 +40,3 @@ let x = setInterval(function() {
     document.getElementById("count").innerHTML = "UPDATE COMPLETED";
   }
 }, 1000);
-
-function closeNav() {
-  document.getElementById("subscriptoNav").style.width = "0";
-  document.getElementById("hamburger").style.marginLeft= "20px";
-}
