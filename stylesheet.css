@@ -23,7 +23,7 @@ p { font-weight: 400; font-size: 20px; color: var(--mørklilla);}
 h1 { font-weight: 500; font-size: 40px; color: var(--mørklilla);}
 h2 { font-weight: 400; font-size: 30px; color: var(--mørklilla);}
 h3 { font-weight: 300; font-size: 25px; color: var(--mørklilla);}
-
+a { text-decoration: none;}
 
 /* Logo */
 .lilla {
@@ -35,8 +35,17 @@ margin-right: auto;
 
 
 /* Steph */
-
-
+#wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#cc {
+  margin-right: 10px;
+  width: 50px;
+  border-radius: 100px;
+}
 
 #backbtn {
   display: inline-block;
