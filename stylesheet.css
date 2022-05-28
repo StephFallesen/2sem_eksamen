@@ -134,6 +134,8 @@ width: 0;
   display: flex;
   align-items: center;
   align-content: center;
+  text-decoration: none;
+  color:var(--mørklilla);
 }
 #subssection {
   display: grid;
@@ -1358,7 +1360,7 @@ label {
       font-size: 15px;
       width: 50px;
   }
-  
+
   .eco-cat {
     display:block;
     background-color: var(--lysgrøn);
@@ -1382,14 +1384,14 @@ label {
     text-align: end;
     width: 155px;
   }
-  
+
   .price-licens1 {
     display: block;
       border-style: none;
       font-size: 12px;
       outline:none;
   }
-  
+
   .eco-cat1 {
     display:block;
     border:none;
@@ -1405,7 +1407,7 @@ label {
     font-size: 12px;
     width: 40px;
 }
-  
+
 }
 
 
@@ -1457,7 +1459,7 @@ label {
   .total-price {
       font-size: 20px;
   }
-  
+
   .eco-cat {
     font-size: 20px;
   }
@@ -1498,7 +1500,7 @@ label {
       margin-right: auto;
   }
   .lilla {
-    width: 400px;
+    width: 300px;
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1510,14 +1512,14 @@ label {
     text-align: end;
     width: 220px;
   }
-  
+
   .price-licens1 {
     display: block;
       border-style: none;
       font-size: 12px;
       outline:none;
   }
-  
+
   .eco-cat1 {
     display:block;
     border:none;
@@ -1533,7 +1535,7 @@ label {
     font-size: 12px;
     width: 50px;
 }
-  
+
 }
 
 
