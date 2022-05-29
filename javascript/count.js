@@ -1,17 +1,9 @@
 
-// Countdown
-// Set the date we're counting down to
 
-//VARIABEL FORKLARINNG - Function by expression:
-//let giver mulighed for at erklære variabler, der er begrænset
-//til omfanget af et scope eller et udtryk, som det bruges på,
-//i modsætning til nøgleordet var, som erklærer en variabel globalt
-//eller lokalt til en hel funktion uanset scopet.
-//Let er derfor block scooped. (block er tuborg klammer)
-// Vi bruger den fordi det er den nyeste metode at deklarede funktioner.
 
-//Derfor erklæres variablen med let og kaldes countDownDate, hvorefter
-//datoen skrives og get time henter den nuværende tid.
+
+
+
 let countDownDate = new Date("June 31, 2022 12:00:00").getTime();
 
 // opdaterer countdown for hvert sekund.
