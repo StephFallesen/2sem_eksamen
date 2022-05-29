@@ -1,17 +1,17 @@
 
-const licategories = document.querySelectorAll('.filter');
+const filters = document.querySelectorAll('.filter');
 
-licategories.forEach(filter => {
+filters.forEach(filter => {
 
   filter.addEventListener('click', function() {
 
     let selectedFilter = filter.getAttribute('data-filter');
-    let itemsToHide = document.querySelectorAll(`.lilist .sublic:not([data-filter='${selectedFilter}'])`);
-    let itemsToShow = document.querySelectorAll(`.lilist [data-filter='${selectedFilter}']`);
+    let itemsToHide = document.querySelectorAll(`.projects .project:not([data-filter='${selectedFilter}'])`);
+    let itemsToShow = document.querySelectorAll(`.projects [data-filter='${selectedFilter}']`);
 
     if (selectedFilter == 'all') {
       itemsToHide = [];
-      itemsToShow = document.querySelectorAll('.lilist [data-filter]');
+      itemsToShow = document.querySelectorAll('.projects [data-filter]');
     }
 
     itemsToHide.forEach(el => {
