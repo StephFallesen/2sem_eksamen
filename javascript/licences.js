@@ -16,12 +16,12 @@ filters.forEach(filter => {
 
     itemsToHide.forEach(el => {
       el.classList.add('hide');
-      el.classList.remove('show');
+      el.classList.remove('show3');
     });
 
     itemsToShow.forEach(el => {
       el.classList.remove('hide');
-      el.classList.add('show');
+      el.classList.add('show3');
     });
 
   });

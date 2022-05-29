@@ -726,17 +726,17 @@ label {
     letter-spacing: 2px;
   }
 
-  span {
+span1 {
   display: inline-block;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.5s ease;
 }
 
-span.fade {
+span1.fade {
   opacity: 1;
   transform: translateY(0px);
-} 
+}
 
 
 /* Fie */
@@ -811,7 +811,7 @@ span.fade {
 .dropdown-content1 a:hover {background-color: var(--lysgrøn)}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
+.show3 {
     display:block;
     margin-left: -480%;
 }
