@@ -1614,10 +1614,6 @@ label {
 }
 /*  // Needed for filters */
 
-/* For decoration only */
-body {
-  font-family: "Darker Grotesque";
-}
 .filters {
   font-size: 18px;
   border: none;
