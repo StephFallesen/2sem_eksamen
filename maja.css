@@ -1,0 +1,123 @@
+/*  Needed for filters */
+
+.hide { /* You can play with the seconds to change the "animation" */
+  animation: hide .5s ease 0s 1 normal forwards;
+  transform-origin: center;
+}
+.show { /* You can play with the seconds to change the "animation" */
+    animation: show .5s ease 0s 1 normal forwards;
+    transform-origin: center;
+}
+
+@keyframes hide {
+  0%{
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+}
+@keyframes show {
+  0%{
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*  // Needed for filters */
+
+/* For decoration only */
+body {
+  font-family: "Darker Grotesque";
+}
+.filters {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:5px;
+  border-radius: 50%;
+}
+.filter {
+  margin: 20px;
+}
+.filter:hover {
+  background-color: #dcbcfd;
+  color: white;
+}
+.filter .active{
+  background-color: #dcbcfd;
+  color: white;
+}
+
+.logo-sub{
+  padding-left: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-sub img {
+    width: 40px;
+    border-radius: 50px;
+}
+}
+.all{
+  border-radius: 20px;
+  background-color: #dcbcfd;
+  width: 90px;
+  border-color: #f2d7ca;
+  text-align: center;
+}
+
+.des{
+  border-radius: 20px;
+  background-color: #f09e9b;
+  width: 90px;
+  text-align: center;
+}
+.dev{
+  border-radius: 20px;
+  background-color: #dcbcfd;
+  width: 120px;
+  text-align: center;
+}
+.man{
+  border-radius: 20px;
+  background-color: #f2d7ca;
+  width: 120px;
+  text-align: center;
+}
+.mar{
+  border-radius: 20px;
+  background-color: #e0f9f0;
+  width: 120px;
+  text-align: center;
+}
+.projects {
+  margin-top: 20px;
+  display: grid;
+  row-gap: 10px;
+  padding: 10px;
+  width: 80%;
+
+}
+.project {
+  display: grid;
+  grid-template-columns: 15% 50% 35%;
+  width: 95%;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border-style: none;
+  background-color: #fcfaf0;
+}
