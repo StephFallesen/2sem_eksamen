@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="javascript/licences.js" defer></script>
-    <script src="javascript/script.js"></script>
-    <title></title>
-  </head>
-  <body>
 
-    <button id="hamburger" class="openbtn" onclick="openNav()">&#9776;</button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="javascript/licences.js" defer></script>
+  <script src="javascript/script.js"></script>
+  <title></title>
+</head>
+
+<body>
+
+  <button id="hamburger" class="openbtn" onclick="openNav()">&#9776;</button>
   <nav id="subscriptoNav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="dropdown-search">
       <button onclick="searchFunction1()" class="dropbtn"><img src="iconer/search.png" alt="loop icon">SEARCH</button>
       <div id="myDropdown" class="dropdown-content1">
         <input type="text" placeholder="Search.." id="myInput" onkeyup="searchFunction2()">
-        <a href="#"><h3>Browserstack</h3></a>
-        <a href="#"><h3>Charles Proxy (1)</h3></a>
-        <a href="#"><h3>Charles Proxy (2)</h3></a>
-        <a href="#"><h3>Code Climate</h3></a>
-        <a href="cloud.html"><h3>Creative Cloud</h3></a>
-        <a href="#"><h3>Figma</h3></a>
-        <a href="#"><h3>Github</h3></a>
-        <a href="#"><h3>Netlify</h3></a>
-        <a href="#"><h3>Webflow</h3></a>
+        <a href="#">
+          <h3>Browserstack</h3>
+        </a>
+        <a href="#">
+          <h3>Charles Proxy (1)</h3>
+        </a>
+        <a href="#">
+          <h3>Charles Proxy (2)</h3>
+        </a>
+        <a href="#">
+          <h3>Code Climate</h3>
+        </a>
+        <a href="cloud.html">
+          <h3>Creative Cloud</h3>
+        </a>
+        <a href="#">
+          <h3>Figma</h3>
+        </a>
+        <a href="#">
+          <h3>Github</h3>
+        </a>
+        <a href="#">
+          <h3>Netlify</h3>
+        </a>
+        <a href="#">
+          <h3>Webflow</h3>
+        </a>
       </div>
     </div>
     <a href="#" class="navicon"><img src="iconer/notification.png" alt="notification bell icon">NOTIFICATIONS</a>
@@ -35,78 +55,77 @@
     <a href="economy.html" class="navicon"><img src="iconer/cash.png" alt="economy icon">ECONOMY</a>
   </nav>
 
-    <button id="backbtn" onclick="history.back()">Go Back</button>
+  <button id="backbtn" onclick="history.back()">Go Back</button>
 
-      <a class="lilla" href="profile.html"><img src="billeder/logolilla.svg" alt=""></a>
-
-
-<!--Majas lort -->
-        <section class="stephmain">
-          <h1 class="lictitle">Subscriptions and Licenses</h1>
-
-              <div class="filters">
-                  <span class="filter all" data-filter="all">Show All</span>
-                  <span class="filter dev" data-filter="dev">Development</span>
-                  <span class="filter des" data-filter="des">Design</span>
-                  <span class="filter mar" data-filter="mar">Marketing</span>
-              </div>
-
-              <div class="projects">
-                <div class="project" data-filter="des">
-                    <div class="logo-sub"><img src="billeder/browserstack.png" alt=""></div>
-                    <p>Browserstack</p>
-                    <p class="des">Design</p>
-                </div>
-                <div class="project" data-filter="dev">
-                  <div class="logo-sub"><img src="billeder/charles.png" alt=""></div>
-                  <p>Charles Proxy (1)</p>
-                  <p class="dev">Development</p>
-                </div>
-                <div class="project" data-filter="dev">
-                  <div class="logo-sub"><img src="billeder/charles.png" alt=""></div>
-                  <p>Charles Proxy (2)</P>
-                  <p class="dev">Development</p>
-                </div>
-                <div class="project" data-filter="dev">
-                  <div class="logo-sub"><img src="billeder/code-climate.jpg" alt=""></div>
-                  <p>Code Climate</p>
-                  <p class="dev">Development</p>
-                </div>
-                <div class="project" data-filter="des">
-                  <div class="logo-sub"><img src="billeder/creative-cloud.png" alt=""></div>
-                  <p>Creative Cloud</p>
-                  <p class="des">Design</p>
-                </div>
-                <div class="project" data-filter="mar">
-                  <div class="logo-sub"><img src="billeder/dmarcian.jpg" alt=""></div>
-                  <p>Dmarcian</p>
-                  <p class="mar">Marketing</p>
-                </div>
-                <div class="project" data-filter="des">
-                  <div class="logo-sub"><img src="billeder/figma.png" alt=""></div>
-                  <p>Figma</p>
-                  <p class="des">Design</p>
-                </div>
-                <div class="project" data-filter="dev">
-                  <div class="logo-sub"><img src="billeder/github.png" alt=""></div>
-                  <p>Github</p>
-                  <p class="dev">Development</p>
-                </div>
-                <div class="project" data-filter="dev">
-                  <div class="logo-sub"><img src="billeder/netlify.png" alt=""></div>
-                  <p>Netlify</p>
-                  <p class="dev">Development</p>
-                </div>
-                <div class="project" data-filter="des">
-                  <div class="logo-sub"><img src="billeder/webflow1.png" alt=""></div>
-                  <p>Webflow</p>
-                  <p class="des">Design</p>
-                </div>
-              </div>
+  <a class="lilla" href="profile.html"><img src="billeder/logolilla.svg" alt=""></a>
 
 
+  <!--Majas lort -->
+  <section class="stephmain">
+    <h1 class="lictitle">Subscriptions and Licenses</h1>
+
+    <div class="filters">
+      <span class="filter all" data-filter="all">Show All</span>
+      <span class="filter dev" data-filter="dev">Development</span>
+      <span class="filter des" data-filter="des">Design</span>
+      <span class="filter mar" data-filter="mar">Marketing</span>
+    </div>
+
+    <div class="projects">
+      <div class="project" data-filter="des">
+        <div class="logo-sub"><img src="billeder/browserstack.png" alt=""></div>
+        <p>Browserstack</p>
+        <p class="des">Design</p>
+      </div>
+      <div class="project" data-filter="dev">
+        <div class="logo-sub"><img src="billeder/charles.png" alt=""></div>
+        <p>Charles Proxy (1)</p>
+        <p class="dev">Development</p>
+      </div>
+      <div class="project" data-filter="dev">
+        <div class="logo-sub"><img src="billeder/charles.png" alt=""></div>
+        <p>Charles Proxy (2)</P>
+        <p class="dev">Development</p>
+      </div>
+      <div class="project" data-filter="dev">
+        <div class="logo-sub"><img src="billeder/code-climate.jpg" alt=""></div>
+        <p>Code Climate</p>
+        <p class="dev">Development</p>
+      </div>
+      <div class="project" data-filter="des">
+        <div class="logo-sub"><img src="billeder/creative-cloud.png" alt=""></div>
+        <p>Creative Cloud</p>
+        <p class="des">Design</p>
+      </div>
+      <div class="project" data-filter="mar">
+        <div class="logo-sub"><img src="billeder/dmarcian.jpg" alt=""></div>
+        <p>Dmarcian</p>
+        <p class="mar">Marketing</p>
+      </div>
+      <div class="project" data-filter="des">
+        <div class="logo-sub"><img src="billeder/figma.png" alt=""></div>
+        <p>Figma</p>
+        <p class="des">Design</p>
+      </div>
+      <div class="project" data-filter="dev">
+        <div class="logo-sub"><img src="billeder/github.png" alt=""></div>
+        <p>Github</p>
+        <p class="dev">Development</p>
+      </div>
+      <div class="project" data-filter="dev">
+        <div class="logo-sub"><img src="billeder/netlify.png" alt=""></div>
+        <p>Netlify</p>
+        <p class="dev">Development</p>
+      </div>
+      <div class="project" data-filter="des">
+        <div class="logo-sub"><img src="billeder/webflow1.png" alt=""></div>
+        <p>Webflow</p>
+        <p class="des">Design</p>
+      </div>
+    </div>
     <footer>
       <p>All rigths reserved by SubScripto 2022</p>
     </footer>
-  </body>
+</body>
+
 </html>
