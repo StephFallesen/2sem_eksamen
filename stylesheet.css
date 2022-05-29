@@ -1788,8 +1788,9 @@ span1.fade {
 }
 
 .styleguideMain {
-  margin-left: 30%;
+  margin-left: 25%;
   margin-bottom: 70px;
+  margin-right: 15%;
 }
 
 .styleguideMain h2 {
@@ -1820,8 +1821,8 @@ span1.fade {
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1833,8 +1834,8 @@ span1.fade {
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1846,8 +1847,8 @@ span1.fade {
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1859,8 +1860,8 @@ span1.fade {
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1872,8 +1873,8 @@ span1.fade {
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1885,8 +1886,8 @@ span1.fade {
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1897,8 +1898,8 @@ span1.fade {
   border-radius: 20px;
   margin-top: 30px;
   margin-right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1933,49 +1934,7 @@ change the style of the sidenav (less padding and a smaller font size) */
   }
 }
 
-.boxgrøn {
-  padding: 20px 30px;
-  margin: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  background-color: var(--lysgrøn);
-  border-radius: 40px;
-  height: 304px;
-  width: 288px;
-}
-.boxlilla {
-  padding: 20px 30px;
-  margin: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  background-color: var(--lyslilla);
-  border-radius: 40px;
-  height: 304px;
-  width: 288px;
-}
-.boxpink {
-  padding: 20px 30px;
-  margin: 20px;
-  z-index: 10;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  background-color: var(--pink);
-  border-radius: 40px;
-  height: 304px;
-  width: 288px;
-}
+
 .boxes {
   display: flex;
   flex-wrap: wrap;

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
+  <script src="javascript/sub.js" defer></script>
   <title>SubScripto Styleguide</title>
 </head>
 
@@ -200,32 +201,204 @@
 
 
     <!-- BOKSE -->
-    <div id="txtb"></div>
     <h1 id="sgh1">Bokse</h1>
-    <h2>Header boks:</h2>
-    <div class="spaces-header">
-      <h1>Velkommen, Frederik Frederiksen</h1>
-      <button class="btn" type="button">KNAP</button>
-    </div>
-    <p>Bruges på profil siden.</p>
-    <textarea name="name" rows="8" cols="80">
-      <button class="btn" type="button">KNAP</button>
-    </textarea>
-
-    <h2>Tekstbokse:</h2>
     <div class="boxes">
+      <div class="boksikon">
+        <img class="programikon" src="billeder/adobe.png" alt="adobe creative cloud logo">
+        <a href="cloud.html" class="subs">Adobe Creative Cloud</a>
+      </div>
+      <p>Denne boks bruges til profil siden, hvor der vises hvilke abonnemter en bruger har. </p>
+      <textarea name="name" rows="8" cols="80">
+        <div class="boksikon">
+          <img class="programikon" src="billeder/adobe.png" alt="adobe creative cloud logo">
+          <a href="cloud.html" class="subs">Adobe Creative Cloud</a>
+        </div>
+      </textarea>
 
-      <div class="boxgrøn"></div>
-      <p>Grøn box.</p>
-      <textarea name="name" rows="8" cols="80"><div class="boxgrøn"></div></textarea>
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-50">
+                  <h3>Licens / Subscription</h3>
+                  <label for="fname">Name Of License / Subscription</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Enter name">
+                  <label for="email"> Email</label>
+                  <input type="text" id="email" name="email" placeholder="xx@abtion.com">
+                  <label>Password Vault Link</label>
+                  <input type="text" id="adr" name="address" placeholder="Insert link">
+                  <label>Category</label>
+                  <select id="cte"></select>
+                  <label>Description Of Use</label>
+                  <input id="des" type="text" name="cvv" placeholder="Enter description">
+                </div>
 
-      <div class="boxlilla"></div>
-      <p>Lilla box</p>
-      <textarea name="name" rows="8" cols="80"><div class="boxlilla"></div></textarea>
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label>Payment Frequency</label>
+                  <select id="pay"></select>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
 
-      <div class="boxpink"></div>
-      <p>Pink box</p>
-      <textarea name="name" rows="8" cols="80"><div class="boxgrøn"></div></textarea>
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2023">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container1">
+                <input type="button" value="Add subscription" id="Overly" class="overly" />
+              </div>
+
+              <div id="ogrooModel" class="modalbox">
+                <div class="dialog">
+                  <img id="alertpic" src="billeder/alert.jpg" alt="">
+                  <p>Your subscription request has been sent to a manager. Please be patient.</p>
+                  <button title="Close" onClick="overlay()" class="closebutton" id="close"><a href="profile.html">close</a></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <p>Dette er tilføjelsen af et ny abonnement.</p>
+      <textarea name="name" rows="8" cols="80">
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Licens / Subscription</h3>
+                    <label for="fname">Name Of License / Subscription</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter name">
+                    <label for="email"> Email</label>
+                    <input type="text" id="email" name="email" placeholder="xx@abtion.com">
+                    <label>Password Vault Link</label>
+                    <input type="text" id="adr" name="address" placeholder="Insert link">
+                    <label>Category</label>
+                    <select id="cte"></select>
+                    <label>Description Of Use</label>
+                    <input id="des" type="text" name="cvv" placeholder="Enter description">
+                  </div>
+
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label>Payment Frequency</label>
+                    <select id="pay"></select>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2023">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container1">
+                  <input type="button" value="Add subscription" id="Overly" class="overly" />
+                </div>
+
+                <div id="ogrooModel" class="modalbox">
+                  <div class="dialog">
+                    <img id="alertpic" src="billeder/alert.jpg" alt="">
+                    <p>Your subscription request has been sent to a manager. Please be patient.</p>
+                    <button title="Close" onClick="overlay()" class="closebutton" id="close"><a href="profile.html">close</a></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </textarea>
+
+      <div class="carobox">
+        <input id="caroinput" type="text" class="cmail" value="design@abtion.com" readonly>
+        <input id="caroinput" type="text" class="ceco-cat" value="Design" readonly>
+        <input id="caroinput" type="text" class="cprice-licens" value="Monthly" readonly>
+        <input id="caroinput" type="text" class="ctotal-price" value="$370" readonly>
+      </div>
+      <p>Denne boks bruges på de individuelle licens sider.</p>
+      <textarea name="name" rows="8" cols="80">
+        <div class="carobox">
+          <input id="caroinput" type="text" class="cmail" value="design@abtion.com" readonly>
+          <input id="caroinput" type="text" class="ceco-cat" value="Design" readonly>
+          <input id="caroinput" type="text" class="cprice-licens" value="Monthly" readonly>
+          <input id="caroinput" type="text" class="ctotal-price" value="$370" readonly>
+        </div>
+      </textarea>
+
+      <div class="eco-collect">
+          <div class="economics1">
+              <input type="text" class="logo-title1" value="Sub Name" readonly >
+              <input type="text" class="eco-cat1" value="Category" readonly >
+              <input type="text" class="price-licens1" value="Licens Price" readonly >
+              <input type="text" class="total-price1" value="Total" readonly >
+          </div>
+          <div class="economics">
+              <div class="logo-names"><img src="billeder/code-climate.jpg" alt=""></div>
+              <input type="text" class="logo-title" value="Code Climate" readonly>
+              <input type="text" class="eco-cat" value="Development" readonly>
+              <input type="text" class="price-licens" value="$20" readonly>
+              <input type="text" id="input-total" class="total-price" value="280" readonly >
+          </div>
+        </div>
+        <p>Denne boks bruge på økonomi siden.</p>
+        <textarea name="name" rows="8" cols="80">
+          <div class="eco-collect">
+              <div class="economics1">
+                  <input type="text" class="logo-title1" value="Sub Name" readonly >
+                  <input type="text" class="eco-cat1" value="Category" readonly >
+                  <input type="text" class="price-licens1" value="Licens Price" readonly >
+                  <input type="text" class="total-price1" value="Total" readonly >
+              </div>
+              <div class="economics">
+                  <div class="logo-names"><img src="billeder/code-climate.jpg" alt=""></div>
+                  <input type="text" class="logo-title" value="Code Climate" readonly>
+                  <input type="text" class="eco-cat" value="Development" readonly>
+                  <input type="text" class="price-licens" value="$20" readonly>
+                  <input type="text" id="input-total" class="total-price" value="280" readonly >
+              </div>
+            </div>
+        </textarea>
+
+        <div class="project" data-filter="des">
+            <div class="logo-sub"><img src="billeder/browserstack.png" alt=""></div>
+            <p>Browserstack</p>
+            <p class="des">Design</p>
+        </div>
+        <p>Denne boks bruges på licens oversigten.</p>
+        <textarea name="name" rows="8" cols="80">
+          <div class="project" data-filter="des">
+              <div class="logo-sub"><img src="billeder/browserstack.png" alt=""></div>
+              <p>Browserstack</p>
+              <p class="des">Design</p>
+          </div>
+        </textarea>
+
+
 
     </div>
   </div>
