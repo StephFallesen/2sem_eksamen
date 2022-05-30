@@ -467,9 +467,10 @@ label {
 }
 
 .cmail {
-    background-color: var(--lysgrøn);
+    background-color: var(--pink);
     border-style:none;
     width: 100%;
+    text-align: left;
 }
 
 .cprice-licens {
@@ -481,7 +482,7 @@ label {
 }
 
 .ctotal-price {
-    background-color: var(--lysgrøn);
+    background-color: var(--pink);
     text-align: end;
     border: none;
     outline: none;
@@ -530,6 +531,11 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "d s"
+}
+
+.clogo-title {
+  background-color: var(--pink);
+  border: none;
 }
 
 .totalbtn {
@@ -589,9 +595,8 @@ label {
     background-color: var(--mørklilla);
     color: var(--egg);
     text-align: center;
-    border
 }
-@media screen (min-width: 490px) and (max-width: 625px) {
+@media screen and (max-width: 625px) {
   .totalbtn {
     width: 115%;
   }
@@ -605,6 +610,9 @@ label {
         margin: 6% auto;
         padding: 5px;
         overflow: hidden;
+    }
+    .totalbtn {
+      width: 104%;
     }
 
     .ceco-collect {
@@ -621,13 +629,13 @@ label {
     .cprice-licens {
      display: block;
      text-align: end;
-     background-color: var(--lysgrøn);
+     background-color: var(--pink);
      border-style: none;
-     width: 50px;
+     width: 60px;
      font-size: 15px;
+     background-color: var(--pink);
     }
-    #caroinput .ctotal-price {
-        background-color: var(--lysgrøn);
+     .ctotal-price {
         text-align: right;
         border: none;
         outline: none;
@@ -637,7 +645,7 @@ label {
 
     .ceco-cat {
       display:block;
-      background-color: var(--lysgrøn);
+      background-color: var(--pink);
       border-style:none;
       font-size: 15px;
       width: 150px;
@@ -1337,6 +1345,10 @@ span1.fade {
   display: none;
 }
 
+.eco-pic {
+  display: none;
+}
+
 
 
 
@@ -1344,7 +1356,7 @@ span1.fade {
 @media screen and (min-width: 490px) {
   .form-box {
       width: 680px;
-      height: 1130px;
+      height: 1200px;
       position: relative;
       margin: 6% auto;
       padding: 5px;
@@ -1453,7 +1465,7 @@ span1.fade {
 @media screen and (min-width: 800px) {
   .form-box {
       width: 1100px;
-      height: 1550px;
+      height: 1650px;
       position: relative;
       margin: 6% auto;
       padding: 5px;
@@ -1572,6 +1584,14 @@ span1.fade {
     outline: none;
     font-size: 12px;
     width: 50px;
+}
+
+.eco-pic {
+  width: 400px;
+      display: block;
+      margin-top: 5%;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 }
