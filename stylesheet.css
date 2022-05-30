@@ -719,7 +719,11 @@ label {
         transition: .5s;
     }
   }
-
+.billedcloud {
+width: 70px;
+border-radius: 100px;
+margin-bottom: 20px;
+}
 
   .text-anim {
     font-size: 2.5rem;
