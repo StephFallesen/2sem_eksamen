@@ -740,7 +740,9 @@ span1.fade {
 
 
 /* Fie */
-
+.economy-title {
+  text-align: center;
+}
 /* Search Button */
 .dropbtn {
   background-color: var(--mørklilla);
