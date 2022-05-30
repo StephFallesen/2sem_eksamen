@@ -18,15 +18,15 @@ const textCharArr = textElStr.split('');
 textEl.innerText = '';
 
 for (let i=0; i<textCharArr.length; i++){
-  textEl.innerHTML += '<span>' + textCharArr[i] + '</span>';
+  textEl.innerHTML += '<span1>' + textCharArr[i] + '</span1>';
 }
 
 let count = 0;
 let timer = setInterval(startAnimation, 50);
 
 function startAnimation(){
-  const span = textEl.querySelectorAll('span')[count];
-  span.classList.add('fade');
+  const span1 = textEl.querySelectorAll('span1')[count];
+  span1.classList.add('fade');
   count++;
 
   if (count === textCharArr.length){
