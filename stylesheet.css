@@ -208,6 +208,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  width:150%;
 }
 footer p {
   color: var(--egg);
@@ -1636,11 +1637,11 @@ span1.fade {
   margin: 20px;
 }
 .filter:hover {
-  background-color: #dcbcfd;
+  background-color: lightgrey;
   color: white;
 }
 .filter .active{
-  background-color: #dcbcfd;
+  background-color: lightgrey;
   color: white;
 }
 
@@ -1656,7 +1657,7 @@ span1.fade {
 }
 .all{
   border-radius: 20px;
-  background-color: #dcbcfd;
+  background-color: #fcfaf0;
   width: 90px;
   border-color: #f2d7ca;
   text-align: center;
@@ -1703,16 +1704,20 @@ span1.fade {
   border-style: none;
   background-color: #fcfaf0;
 }
+.project p{
+  font-size: 18px;
+  padding-left: 16px;
+}
 @media screen and (min-width: 425px){
   .licategories p{
     font-size:20px;
   }
 
-  .sublic{
+  .projects{
     width: 100%;
     padding: 0 20px;
   }
-  .lilist p{
+  .project p{
     font-size: 20px;
   }
 }
