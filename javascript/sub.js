@@ -27,7 +27,7 @@ function dropDown() {
 }
 
 //ARRAY
-let categoryArray = new Array["Category", "Development", "Design", "Management", "Marketing"];
+let categoryArray = new Array("Category", "Development", "Design", "Management", "Marketing");
 
 //DOM
   let dropdown = document.getElementById('cte');
