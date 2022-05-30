@@ -1131,7 +1131,6 @@ span1.fade {
     .login-button {
       padding: 15px;
       width: 200px;
-      margin-left: 22%;
       font-weight: 600;
     }
     .quarter-circle-bottom-left{
@@ -1505,7 +1504,6 @@ span1.fade {
   }
   .button-box {
       width: 220px;
-      margin-left: 38%;
       position: relative;
       box-shadow: 0 0 10px 0 var(--mørklilla);
       border-radius: 30px;
